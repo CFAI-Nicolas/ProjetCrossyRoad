@@ -163,11 +163,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!vivant) return;  // Arrête le traitement si le joueur est mort.
+        if (!vivant) return; // Arrête le traitement si le joueur est déjà mort.
 
         if (other.CompareTag("voiture"))
         {
-            vivant = false;
+            StartCoroutine(DelayDeath());
         }
         else if (other.CompareTag("buche"))
         {
@@ -198,21 +198,22 @@ public class PlayerMovement : MonoBehaviour
     public void Noyer()
     {
         RaycastHit hit;
-
-        // Ajuste la hauteur de départ du rayon vers le bas pour qu'il commence légèrement au-dessus de la position actuelle du joueur et reculé
         Vector3 rayStartPoint = transform.position + Vector3.up * 0.1f;
-
-        // Lance un rayon vers le bas à partir du point ajusté et affiche-le en rouge dans l'éditeur Unity
         Debug.DrawRay(rayStartPoint, Vector3.down * 3, Color.red);
 
-        // Vérifie s'il y a une collision avec un objet
         if (Physics.Raycast(rayStartPoint, Vector3.down, out hit, 3))
         {
-            // Si le rayon touche un objet
             if (hit.collider.CompareTag("eau"))
             {
-                vivant = false;
+                StartCoroutine(DelayDeath());
             }
         }
+    }
+
+    IEnumerator DelayDeath()
+    {
+        // Attendre que le mouvement actuel soit terminé
+        yield return new WaitForSeconds(0.1f); // Ajustez cette durée selon la durée du mouvement du personnage
+        vivant = false;
     }
 }
