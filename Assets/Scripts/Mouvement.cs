@@ -13,9 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public Transform Graphique;
     public LayerMask CoucheObstacles;
     public LayerMask CoucheEau;
+    public LayerMask CoucheBuche; // Nouvelle couche pour les rondins
     public float distanceDeVue = 1;
     public bool vivant = true;
-    //public Animator animations;
+
+    private Rigidbody playerRigidbody; // Rigidbody du joueur
+    private bool onBuche; // Indique si le joueur est sur la buche
+    private Transform bucheTransform; // Transform de la buche
 
     void Start()
     {
@@ -23,11 +27,13 @@ public class PlayerMovement : MonoBehaviour
         lateralPosition = 0;
         speed = 18;
         InvokeRepeating("Noyer", 1, 0.5f);
+        playerRigidbody = GetComponent<Rigidbody>();
+        onBuche = false;
+        bucheTransform = null;
     }
 
     void Update()
     {
-        
         UpdatePosition();
         Noyer();
 
@@ -50,6 +56,13 @@ public class PlayerMovement : MonoBehaviour
         {
             MoveLateral(-1);
         }
+
+        // Si le joueur est sur la buche, mettre à jour sa position pour suivre la buche
+        if (onBuche && bucheTransform != null)
+        {
+            currentPosition = bucheTransform.position;
+            transform.position = currentPosition;
+        }
     }
 
     private void OnDrawGizmos()
@@ -61,12 +74,16 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdatePosition()
     {
-
-        currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
-        transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
-                if (!vivant)
+        if (!vivant)
         {
             return;
+        }
+
+        // Si le joueur n'est pas sur la buche, déplacer normalement
+        if (!onBuche)
+        {
+            currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
+            transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
         }
     }
 
@@ -82,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         forwardDistance++;
-        //animations.SetTrigger("Jump");
         if (forwardDistance > minForwardDistance)
         {
             minForwardDistance = forwardDistance;
@@ -105,7 +121,6 @@ public class PlayerMovement : MonoBehaviour
         if (forwardDistance > minForwardDistance - 3)
         {
             forwardDistance += -1;
-            //animations.SetTrigger("Jump");
         }
     }
 
@@ -122,7 +137,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         lateralPosition += direction;
-        //animations.SetTrigger("Jump");
         lateralPosition = Mathf.Clamp(lateralPosition, -5, 5);
     }
 
@@ -142,8 +156,28 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("voiture"))
         {
-            //animations.SetTrigger("Ecraser");
             vivant = false;
+        }
+
+        if (other.CompareTag("buche"))
+        {
+            // Le joueur entre en collision avec la buche
+            onBuche = true;
+            bucheTransform = other.transform;
+            // Ajouter le joueur comme enfant de la buche
+            transform.parent = bucheTransform;
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("buche"))
+        {
+            // Le joueur quitte la buche
+            onBuche = false;
+            bucheTransform = null;
+            // Détacher le joueur de la buche
+            transform.parent = null;
         }
     }
 
@@ -163,8 +197,6 @@ public class PlayerMovement : MonoBehaviour
             // Si le rayon touche un objet
             if (hit.collider.CompareTag("eau"))
             {
-                //animations.SetTrigger("Noyer");
-                // Définit vivant sur false pour indiquer que le joueur est noyé
                 vivant = false;
             }
         }
