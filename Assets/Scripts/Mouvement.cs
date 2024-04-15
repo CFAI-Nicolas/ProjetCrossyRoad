@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask CoucheEau;
     public float distanceDeVue = 1;
     public bool vivant = true;
-    public Animator animations;
+    //public Animator animations;
 
     void Start()
     {
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         forwardDistance++;
-        animations.SetTrigger("Jump");
+        //animations.SetTrigger("Jump");
         if (forwardDistance > minForwardDistance)
         {
             minForwardDistance = forwardDistance;
@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
         if (forwardDistance > minForwardDistance - 3)
         {
             forwardDistance += -1;
-            animations.SetTrigger("Jump");
+            //animations.SetTrigger("Jump");
         }
     }
 
@@ -122,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         lateralPosition += direction;
-        animations.SetTrigger("Jump");
+        //animations.SetTrigger("Jump");
         lateralPosition = Mathf.Clamp(lateralPosition, -5, 5);
     }
 
@@ -142,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("voiture"))
         {
-            animations.SetTrigger("Ecraser");
+            //animations.SetTrigger("Ecraser");
             vivant = false;
         }
     }
@@ -163,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
             // Si le rayon touche un objet
             if (hit.collider.CompareTag("eau"))
             {
-                animations.SetTrigger("Noyer");
+                //animations.SetTrigger("Noyer");
                 // Définit vivant sur false pour indiquer que le joueur est noyé
                 vivant = false;
             }
