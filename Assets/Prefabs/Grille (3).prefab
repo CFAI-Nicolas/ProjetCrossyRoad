@@ -286,6 +286,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buche (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Size.x
+      value: 6.088395
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Size.z
+      value: 2.3272316
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Center.x
+      value: -0.37166637
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0067865853
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -347,6 +363,22 @@ PrefabInstance:
     - target: {fileID: 8897576722783364301, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
       propertyPath: m_Name
       value: Buche
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Size.x
+      value: 5.8131895
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Size.z
+      value: 3.208813
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Center.x
+      value: 0.047088414
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113222247064765014, guid: 5f5c052a4405b384cb2e051fd56ef18d, type: 3}
+      propertyPath: m_Center.z
+      value: -0.17097117
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
