@@ -15,17 +15,19 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask CoucheEau;
     public float distanceDeVue = 1;
     public bool vivant = true;
+    public Animator animations;
 
     void Start()
     {
         forwardDistance = 0;
         lateralPosition = 0;
         speed = 18;
-        InvokeRepeating("Noyer",1,0.5f);
+        InvokeRepeating("Noyer", 1, 0.5f);
     }
 
     void Update()
     {
+        
         UpdatePosition();
         Noyer();
 
@@ -52,19 +54,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Ray rayo = new Ray(Graphique.position + Vector3.up * 0.5f, Graphique.forward); // Correction de l'instanciation du rayon
+        Ray rayo = new Ray(Graphique.position + Vector3.up * 0.5f, Graphique.forward);
         Gizmos.color = Color.green;
         Gizmos.DrawLine(Graphique.position + Vector3.up * 0.5f, Graphique.position + Vector3.up * 0.5f + Graphique.forward * distanceDeVue);
     }
 
     void UpdatePosition()
     {
-        if (!vivant)
+
+        currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
+        transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
+                if (!vivant)
         {
             return;
         }
-        currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
-        transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
     }
 
     public void MoveForward()
@@ -79,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         forwardDistance++;
+        animations.SetTrigger("Jump");
         if (forwardDistance > minForwardDistance)
         {
             minForwardDistance = forwardDistance;
@@ -101,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
         if (forwardDistance > minForwardDistance - 3)
         {
             forwardDistance += -1;
+            animations.SetTrigger("Jump");
         }
     }
 
@@ -117,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         lateralPosition += direction;
+        animations.SetTrigger("Jump");
         lateralPosition = Mathf.Clamp(lateralPosition, -5, 5);
     }
 
@@ -136,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("voiture"))
         {
+            animations.SetTrigger("Ecraser");
             vivant = false;
         }
     }
@@ -143,15 +150,23 @@ public class PlayerMovement : MonoBehaviour
     public void Noyer()
     {
         RaycastHit hit;
-        Ray rayo = new Ray(transform.position + Vector3.up, Vector3.down);
 
-        if (Physics.Raycast(rayo, out hit, 3, CoucheEau))
+        // Ajuste la hauteur de départ du rayon vers le bas pour qu'il commence légèrement au-dessus de la position actuelle du joueur et reculé
+        Vector3 rayStartPoint = transform.position + Vector3.up * 0.1f;
+
+        // Lance un rayon vers le bas à partir du point ajusté et affiche-le en rouge dans l'éditeur Unity
+        Debug.DrawRay(rayStartPoint, Vector3.down * 3, Color.red);
+
+        // Vérifie s'il y a une collision avec un objet
+        if (Physics.Raycast(rayStartPoint, Vector3.down, out hit, 3))
         {
+            // Si le rayon touche un objet
             if (hit.collider.CompareTag("eau"))
             {
+                animations.SetTrigger("Noyer");
+                // Définit vivant sur false pour indiquer que le joueur est noyé
                 vivant = false;
             }
         }
     }
-
 }
