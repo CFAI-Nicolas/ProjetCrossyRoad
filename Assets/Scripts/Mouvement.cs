@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     public float distanceDeVue = 1;
     public bool vivant = true;
 
-    private Rigidbody playerRigidbody; // Rigidbody du joueur
     private bool onBuche; // Indique si le joueur est sur la buche
     private Transform bucheTransform; // Transform de la buche
 
@@ -27,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
         lateralPosition = 0;
         speed = 18;
         InvokeRepeating("Noyer", 1, 0.5f);
-        playerRigidbody = GetComponent<Rigidbody>();
         onBuche = false;
         bucheTransform = null;
     }
@@ -37,32 +35,42 @@ public class PlayerMovement : MonoBehaviour
         UpdatePosition();
         Noyer();
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (!vivant)
         {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) // 'Z' sur un clavier AZERTY
+        {
+            Graphique.eulerAngles = new Vector3(0, 0, 0); // S'assure que le personnage regarde vers l'avant
             MoveForward();
+            if (onBuche) ExitLog();
         }
-
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) // 'S'
         {
+            Graphique.eulerAngles = new Vector3(0, 180, 0); // Regarde vers l'arrière
             MoveBackward();
+            if (onBuche) ExitLog();
         }
-
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) // 'D'
         {
+            Graphique.eulerAngles = new Vector3(0, 90, 0); // Regarde à droite
             MoveLateral(1);
+            if (onBuche) ExitLog();
         }
-
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) // 'Q' sur un clavier AZERTY
         {
+            Graphique.eulerAngles = new Vector3(0, -90, 0); // Regarde à gauche
             MoveLateral(-1);
+            if (onBuche) ExitLog();
         }
+    }
 
-        // Si le joueur est sur la buche, mettre à jour sa position pour suivre la buche
-        if (onBuche && bucheTransform != null)
-        {
-            currentPosition = bucheTransform.position;
-            transform.position = currentPosition;
-        }
+    void ExitLog()
+    {
+        onBuche = false;
+        bucheTransform = null;
+        // Réinitialisez ici toute autre logique nécessaire pour gérer correctement la sortie de la bûche
     }
 
     private void OnDrawGizmos()
@@ -79,13 +87,19 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // Si le joueur n'est pas sur la buche, déplacer normalement
-        if (!onBuche)
+        if (onBuche && bucheTransform != null)
+        {
+            // Suit le mouvement de la bûche
+            currentPosition = new Vector3(bucheTransform.position.x, 0, bucheTransform.position.z);
+        }
+        else
         {
             currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
-            transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
         }
+
+        transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
     }
+
 
     public void MoveForward()
     {
@@ -161,11 +175,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.CompareTag("buche"))
         {
-            // Le joueur entre en collision avec la buche
             onBuche = true;
-            bucheTransform = other.transform;
-            // Ajouter le joueur comme enfant de la buche
-            transform.parent = bucheTransform;
+            bucheTransform = other.transform;  // Assurez-vous que le Transform est correctement assigné
         }
     }
 
@@ -173,11 +184,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("buche"))
         {
-            // Le joueur quitte la buche
             onBuche = false;
             bucheTransform = null;
-            // Détacher le joueur de la buche
-            transform.parent = null;
         }
     }
 
@@ -200,5 +208,20 @@ public class PlayerMovement : MonoBehaviour
                 vivant = false;
             }
         }
+    }
+
+    // Fonction pour déplacer le joueur sur la buche
+    private void MoveOnBuche(Vector3 direction)
+    {
+        if (!vivant)
+        {
+            return;
+        }
+
+        // Déplacer le joueur selon la direction donnée et la vitesse
+        currentPosition += direction * speed * Time.deltaTime;
+
+        // Mettre à jour la position du joueur
+        transform.position = currentPosition;
     }
 }
