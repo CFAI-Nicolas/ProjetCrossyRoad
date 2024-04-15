@@ -44,34 +44,34 @@ public class PlayerMovement : MonoBehaviour
         {
             Graphique.eulerAngles = new Vector3(0, 0, 0); // S'assure que le personnage regarde vers l'avant
             MoveForward();
-            if (onBuche) ExitLog();
         }
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) // 'S'
         {
             Graphique.eulerAngles = new Vector3(0, 180, 0); // Regarde vers l'arrière
             MoveBackward();
-            if (onBuche) ExitLog();
         }
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) // 'D'
         {
             Graphique.eulerAngles = new Vector3(0, 90, 0); // Regarde à droite
             MoveLateral(1);
-            if (onBuche) ExitLog();
         }
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) // 'Q' sur un clavier AZERTY
         {
             Graphique.eulerAngles = new Vector3(0, -90, 0); // Regarde à gauche
             MoveLateral(-1);
-            if (onBuche) ExitLog();
         }
+
     }
 
     void ExitLog()
     {
         onBuche = false;
         bucheTransform = null;
-        // Réinitialisez ici toute autre logique nécessaire pour gérer correctement la sortie de la bûche
+        currentPosition = new Vector3(Mathf.RoundToInt(transform.position.x), 0, Mathf.RoundToInt(transform.position.z));
+        lateralPosition = Mathf.RoundToInt(currentPosition.x);
+        forwardDistance = Mathf.RoundToInt(currentPosition.z);
     }
+
 
     private void OnDrawGizmos()
     {
@@ -82,30 +82,27 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdatePosition()
     {
-        if (!vivant)
-        {
-            return;
-        }
+        if (!vivant) return;  // Ne pas mettre à jour la position si le joueur est mort.
 
         if (onBuche && bucheTransform != null)
         {
-            // Suit le mouvement de la bûche
             currentPosition = new Vector3(bucheTransform.position.x, 0, bucheTransform.position.z);
+            transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
         }
         else
         {
             currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
+            transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
         }
-
-        transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
     }
 
 
-    public void MoveForward()
+
+    void MoveForward()
     {
-        if (!vivant)
+        if (!vivant || onBuche)
         {
-            return;
+            ExitLog();
         }
         Graphique.eulerAngles = new Vector3(0, 0, 0);
         if (RegardAvant())
@@ -120,36 +117,34 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void MoveBackward()
+    void MoveBackward()
     {
-        if (!vivant)
+        if (!vivant || onBuche)
         {
-            return;
+            ExitLog();
         }
         Graphique.eulerAngles = new Vector3(0, 180, 0);
         if (RegardAvant())
         {
             return;
         }
-
         if (forwardDistance > minForwardDistance - 3)
         {
-            forwardDistance += -1;
+            forwardDistance--;
         }
     }
 
-    public void MoveLateral(int direction)
+    void MoveLateral(int direction)
     {
-        if (!vivant)
+        if (!vivant || onBuche)
         {
-            return;
+            ExitLog();
         }
         Graphique.eulerAngles = new Vector3(0, 90 * direction, 0);
         if (RegardAvant())
         {
             return;
         }
-
         lateralPosition += direction;
         lateralPosition = Mathf.Clamp(lateralPosition, -5, 5);
     }
@@ -168,16 +163,27 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!vivant) return;  // Arrête le traitement si le joueur est mort.
+
         if (other.CompareTag("voiture"))
         {
             vivant = false;
         }
-
-        if (other.CompareTag("buche"))
+        else if (other.CompareTag("buche"))
         {
             onBuche = true;
-            bucheTransform = other.transform;  // Assurez-vous que le Transform est correctement assigné
+            bucheTransform = other.transform;
+            CenterOnLog(bucheTransform);
         }
+    }
+
+    void CenterOnLog(Transform logTransform)
+    {
+        if (!vivant) return;  // Arrête le repositionnement si le joueur est mort.
+
+        Vector3 logCenter = logTransform.position;
+        currentPosition = new Vector3(logCenter.x, transform.position.y, logCenter.z);
+        transform.position = currentPosition;
     }
 
     public void OnTriggerExit(Collider other)
@@ -208,20 +214,5 @@ public class PlayerMovement : MonoBehaviour
                 vivant = false;
             }
         }
-    }
-
-    // Fonction pour déplacer le joueur sur la buche
-    private void MoveOnBuche(Vector3 direction)
-    {
-        if (!vivant)
-        {
-            return;
-        }
-
-        // Déplacer le joueur selon la direction donnée et la vitesse
-        currentPosition += direction * speed * Time.deltaTime;
-
-        // Mettre à jour la position du joueur
-        transform.position = currentPosition;
     }
 }
