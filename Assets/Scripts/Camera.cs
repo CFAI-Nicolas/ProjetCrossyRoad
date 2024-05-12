@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public PlayerMovement playerMovement; // Assurez-vous que ceci est bien attaché dans l'inspecteur Unity
-    public float speed = 0.750f;
+    public float speed = 0.90f;
     public Vector3 offset; // Ajoutez une variable offset que vous pouvez ajuster dans l'inspecteur Unity
 
     void LateUpdate()

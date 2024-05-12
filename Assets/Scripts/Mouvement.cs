@@ -13,65 +13,45 @@ public class PlayerMovement : MonoBehaviour
     public Transform Graphique;
     public LayerMask CoucheObstacles;
     public LayerMask CoucheEau;
-    public LayerMask CoucheBuche; // Nouvelle couche pour les rondins
     public float distanceDeVue = 1;
     public bool vivant = true;
-
-    private bool onBuche; // Indique si le joueur est sur la buche
-    private Transform bucheTransform; // Transform de la buche
+    public Animator animations;
+    public AnimationCurve courbe;
 
     void Start()
     {
         forwardDistance = 0;
         lateralPosition = 0;
-        speed = 18;
+        speed = 300;
         InvokeRepeating("Noyer", 1, 0.5f);
-        onBuche = false;
-        bucheTransform = null;
     }
 
     void Update()
     {
+
         UpdatePosition();
         Noyer();
 
-        if (!vivant)
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            return;
-        }
-
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) // 'Z' sur un clavier AZERTY
-        {
-            Graphique.eulerAngles = new Vector3(0, 0, 0); // S'assure que le personnage regarde vers l'avant
             MoveForward();
         }
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) // 'S'
+
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            Graphique.eulerAngles = new Vector3(0, 180, 0); // Regarde vers l'arrière
             MoveBackward();
         }
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) // 'D'
+
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Graphique.eulerAngles = new Vector3(0, 90, 0); // Regarde à droite
             MoveLateral(1);
         }
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) // 'Q' sur un clavier AZERTY
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Graphique.eulerAngles = new Vector3(0, -90, 0); // Regarde à gauche
             MoveLateral(-1);
         }
-
     }
-
-    void ExitLog()
-    {
-        onBuche = false;
-        bucheTransform = null;
-        currentPosition = new Vector3(Mathf.RoundToInt(transform.position.x), 0, Mathf.RoundToInt(transform.position.z));
-        lateralPosition = Mathf.RoundToInt(currentPosition.x);
-        forwardDistance = Mathf.RoundToInt(currentPosition.z);
-    }
-
 
     private void OnDrawGizmos()
     {
@@ -82,27 +62,29 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdatePosition()
     {
-        if (!vivant) return;  // Ne pas mettre à jour la position si le joueur est mort.
-
-        if (onBuche && bucheTransform != null)
+        if (!vivant)
         {
-            currentPosition = new Vector3(bucheTransform.position.x, 0, bucheTransform.position.z);
-            transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
-        }
-        else
-        {
-            currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
-            transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
+            return;
         }
     }
 
-
-
-    void MoveForward()
+    public IEnumerator ChangePosition()
     {
-        if (!vivant || onBuche)
+        currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
+        Vector3 posActuel = transform.position;
+
+        for (int i = 0; i < 10; i++) 
         {
-            ExitLog();
+            transform.position = Vector3.Lerp(posActuel, currentPosition, i * 0.1f) + Vector3.up * courbe.Evaluate(i * 0.1f);
+            yield return new WaitForSeconds(1f / speed);
+        }
+    }
+
+    public void MoveForward()
+    {
+        if (!vivant)
+        {
+            return;
         }
         Graphique.eulerAngles = new Vector3(0, 0, 0);
         if (RegardAvant())
@@ -110,43 +92,53 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         forwardDistance++;
+        //animations.SetTrigger("Jump");
         if (forwardDistance > minForwardDistance)
         {
             minForwardDistance = forwardDistance;
             monde.CreateGrille();
         }
+        StartCoroutine(ChangePosition());
     }
 
-    void MoveBackward()
+    public void MoveBackward()
     {
-        if (!vivant || onBuche)
+        if (!vivant)
         {
-            ExitLog();
+            return;
         }
         Graphique.eulerAngles = new Vector3(0, 180, 0);
         if (RegardAvant())
         {
             return;
         }
+
         if (forwardDistance > minForwardDistance - 3)
         {
-            forwardDistance--;
+            forwardDistance += -1;
+            //animations.SetTrigger("Jump");
         }
+        StartCoroutine(ChangePosition());
+
     }
 
-    void MoveLateral(int direction)
+    public void MoveLateral(int direction)
     {
-        if (!vivant || onBuche)
+        if (!vivant)
         {
-            ExitLog();
+            return;
         }
         Graphique.eulerAngles = new Vector3(0, 90 * direction, 0);
         if (RegardAvant())
         {
             return;
         }
+
         lateralPosition += direction;
+        //animations.SetTrigger("Jump");
         lateralPosition = Mathf.Clamp(lateralPosition, -5, 5);
+        StartCoroutine(ChangePosition());
+
     }
 
     public bool RegardAvant()
@@ -163,57 +155,33 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!vivant) return; // Arrête le traitement si le joueur est déjà mort.
-
         if (other.CompareTag("voiture"))
         {
-            StartCoroutine(DelayDeath());
-        }
-        else if (other.CompareTag("buche"))
-        {
-            onBuche = true;
-            bucheTransform = other.transform;
-            CenterOnLog(bucheTransform);
-        }
-    }
-
-    void CenterOnLog(Transform logTransform)
-    {
-        if (!vivant) return;  // Arrête le repositionnement si le joueur est mort.
-
-        Vector3 logCenter = logTransform.position;
-        currentPosition = new Vector3(logCenter.x, transform.position.y, logCenter.z);
-        transform.position = currentPosition;
-    }
-
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("buche"))
-        {
-            onBuche = false;
-            bucheTransform = null;
+            animations.SetTrigger("Ecraser");
+            vivant = false;
         }
     }
 
     public void Noyer()
     {
         RaycastHit hit;
+
+        // Ajuste la hauteur de départ du rayon vers le bas pour qu'il commence légèrement au-dessus de la position actuelle du joueur et reculé
         Vector3 rayStartPoint = transform.position + Vector3.up * 0.1f;
+
+        // Lance un rayon vers le bas à partir du point ajusté et affiche-le en rouge dans l'éditeur Unity
         Debug.DrawRay(rayStartPoint, Vector3.down * 3, Color.red);
 
+        // Vérifie s'il y a une collision avec un objet
         if (Physics.Raycast(rayStartPoint, Vector3.down, out hit, 3))
         {
+            // Si le rayon touche un objet
             if (hit.collider.CompareTag("eau"))
             {
-                StartCoroutine(DelayDeath());
+                animations.SetTrigger("Noyer");
+                // Définit vivant sur false pour indiquer que le joueur est noyé
+                vivant = false;
             }
         }
-    }
-
-    IEnumerator DelayDeath()
-    {
-        // Attendre que le mouvement actuel soit terminé
-        yield return new WaitForSeconds(0.1f); // Ajustez cette durée selon la durée du mouvement du personnage
-        vivant = false;
     }
 }
