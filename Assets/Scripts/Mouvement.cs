@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask CoucheEau;
     public LayerMask CoucheBuche; // Nouvelle couche pour les rondins
     public float distanceDeVue = 1;
-    public bool vivant = true;
+    private bool vivant = true; // passé en privé
 
     private bool onBuche; // Indique si le joueur est sur la buche
     private Transform bucheTransform; // Transform de la buche
@@ -220,5 +220,10 @@ public class PlayerMovement : MonoBehaviour
     public int GetMinForwardDistance()
     {
         return minForwardDistance; 
+    }
+
+    public bool IsAlive
+    {
+        get { return vivant; }
     }
 }
