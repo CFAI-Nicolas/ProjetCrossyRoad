@@ -94,8 +94,8 @@ public class PlayerMovement : MonoBehaviour
             currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
             transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
         }
-    }
 
+    }
 
 
     void MoveForward()
@@ -163,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!vivant) return; // Arrête le traitement si le joueur est déjà mort.
+        if (!vivant) return;
 
         if (other.CompareTag("voiture"))
         {
@@ -179,7 +179,7 @@ public class PlayerMovement : MonoBehaviour
 
     void CenterOnLog(Transform logTransform)
     {
-        if (!vivant) return;  // Arrête le repositionnement si le joueur est mort.
+        if (!vivant) return; 
 
         Vector3 logCenter = logTransform.position;
         currentPosition = new Vector3(logCenter.x, transform.position.y, logCenter.z);

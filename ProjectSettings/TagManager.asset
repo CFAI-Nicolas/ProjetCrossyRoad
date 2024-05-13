@@ -6,6 +6,7 @@ TagManager:
   tags:
   - voiture
   - eau
+  - buche
   layers:
   - Default
   - TransparentFX

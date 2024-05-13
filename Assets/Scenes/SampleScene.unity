@@ -157,6 +157,7 @@ MonoBehaviour:
   - {fileID: 8444768022287406592, guid: f9d6dbf35da1ee4409ef9320351654cd, type: 3}
   - {fileID: 1694357736347602823, guid: 72e0297c189002344b6943907a55b60d, type: 3}
   - {fileID: 7474214790327812889, guid: 79c7bd9fe016f844f80b4c1a8db504c7, type: 3}
+  - {fileID: 1694357736347602823, guid: 9843111b078973445822a2728fcaebb4, type: 3}
   GrillesDevantJoueur: 15
 --- !u!4 &150626254
 Transform:
@@ -308,6 +309,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   CoucheEau:
+    serializedVersion: 2
+    m_Bits: 16
+  CoucheBuche:
     serializedVersion: 2
     m_Bits: 16
   distanceDeVue: 1.1
