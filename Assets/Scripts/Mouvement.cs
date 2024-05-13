@@ -213,7 +213,12 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator DelayDeath()
     {
         // Attendre que le mouvement actuel soit terminé
-        yield return new WaitForSeconds(0.1f); // Ajustez cette durée selon la durée du mouvement du personnage
+        yield return new WaitForSeconds(0.1f); // durée ajustée selon la durée du mouvement du personnage
         vivant = false;
+    }
+
+    public int GetMinForwardDistance()
+    {
+        return minForwardDistance; 
     }
 }
