@@ -355,6 +355,7 @@
 "Assets/Scripts/Buche.cs"
 "Assets/Scripts/Camera.cs"
 "Assets/Scripts/Destructeur.cs"
+"Assets/Scripts/DistanceDisplay.cs"
 "Assets/Scripts/LevelManager.cs"
 "Assets/Scripts/MenuController.cs"
 "Assets/Scripts/Monde.cs"

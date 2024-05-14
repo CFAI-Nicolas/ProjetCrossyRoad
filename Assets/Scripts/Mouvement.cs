@@ -292,5 +292,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public int GetMaxForwardDistance()
+    {
+        return maxForwardDistance;
+    }
 
 }

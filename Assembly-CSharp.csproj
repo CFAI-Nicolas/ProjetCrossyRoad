@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Monde.cs" />
     <Compile Include="Assets\Scripts\Destructeur.cs" />
+    <Compile Include="Assets\Scripts\DistanceDisplay.cs" />
     <Compile Include="Assets\Scripts\Buche.cs" />
     <Compile Include="Assets\Scripts\RetourBuches.cs" />
     <Compile Include="Assets\Scripts\Mouvement.cs" />
