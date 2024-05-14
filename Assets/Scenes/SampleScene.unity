@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 835196716}
   - component: {fileID: 835196715}
   m_Layer: 5
-  m_Name: Background distance
+  m_Name: Background compteur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 1332962053}
   - component: {fileID: 1332962052}
   m_Layer: 5
-  m_Name: Image
+  m_Name: FondBleu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
