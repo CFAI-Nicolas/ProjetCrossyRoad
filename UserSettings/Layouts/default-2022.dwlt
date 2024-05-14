@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 77
+  controlID: 52
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -634,9 +634,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.07122409, y: 5.688422, z: -6.7695355}
+    m_Target: {x: 363.31165, y: 185.50877, z: 132.35474}
     speed: 2
-    m_Value: {x: -0.07122409, y: 5.688422, z: -6.7695355}
+    m_Value: {x: 363.31165, y: 185.50877, z: 132.35474}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -682,13 +682,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3399654, y: 0.35106817, z: -0.13856149, w: 0.8614132}
+    m_Target: {x: 0.15289766, y: 0.071088955, z: -0.011033826, w: 0.98564947}
     speed: 2
-    m_Value: {x: 0.3399557, y: 0.35105813, z: -0.13855752, w: 0.86138856}
+    m_Value: {x: 0.15289323, y: 0.0710869, z: -0.011033506, w: 0.9856209}
   m_Size:
-    m_Target: 3.0319164
+    m_Target: 302.14545
     speed: 2
-    m_Value: 3.0319164
+    m_Value: 302.14545
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -750,9 +750,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 84590000
-      m_LastClickedID: 22916
-      m_ExpandedIDs: 30fbffff8c590000
+      m_SelectedIDs: 6e5e0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6ed6ffff1cd8ffff66e8ffffdcecffff04edffff30fbfffff85e0000245f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -989,7 +989,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -997,15 +997,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Nico\Documents\EcoleInge\PO C#\Projet Crossy Road\ProjetCrossyRoad
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 785c0000
-    m_LastClickedID: 23672
+    m_SelectedIDs: 7a5c0000
+    m_LastClickedID: 23674
     m_ExpandedIDs: 000000006c5c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
