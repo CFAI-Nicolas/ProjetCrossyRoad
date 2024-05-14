@@ -70,3 +70,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ensure Unity assets are not ignored
+!/[Aa]ssets/**/*.unity
+!/[Aa]ssets/**/*.prefab
+!/[Aa]ssets/**/*.asset
+!/[Aa]ssets/**/*.mat
+!/[Aa]ssets/**/*.physicMaterial
+!/[Aa]ssets/**/*.meta

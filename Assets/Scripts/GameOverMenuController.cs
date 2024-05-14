@@ -7,9 +7,11 @@ public class GameOverMenuController : MonoBehaviour
 {
     public PlayerMovement playerMovement;
     public GameObject gameOverMenu;
+    private AudioSource audioSource;
     void Start()
     {
         gameOverMenu.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -34,16 +36,19 @@ public class GameOverMenuController : MonoBehaviour
 
     public void RestartGame()
     {
+        audioSource.Stop();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMainMenu()
     {
+        audioSource.Stop();
         // SceneManager.LoadScene("MainMenu"); // à activer après le merge avec la branche de Paul
     }
 
     public void QuitGame()
     {
+        audioSource.Stop();
         Debug.Log("Fermeture du jeu"); // vérifier après compilation
         Application.Quit();
     }
