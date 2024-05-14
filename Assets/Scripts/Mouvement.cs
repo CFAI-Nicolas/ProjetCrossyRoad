@@ -250,6 +250,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public AudioClip deadwater;
     public void Noyer()
     {
         RaycastHit hit;
@@ -274,6 +275,9 @@ public class PlayerMovement : MonoBehaviour
                 animations.SetTrigger("Noyer");
                 // Définit vivant sur false pour indiquer que le joueur est noyé
                 vivant = false;
+                // Jouer le son "deadwater"
+                AudioSource audioSource = GetComponent<AudioSource>();
+                audioSource.PlayOneShot(deadwater);
             }
         }
     }
