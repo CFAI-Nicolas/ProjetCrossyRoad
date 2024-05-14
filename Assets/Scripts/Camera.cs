@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -8,29 +10,17 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        // Assurez-vous que playerMovement n'est pas null et que le joueur est vivant
-        if (playerMovement != null && playerMovement.vivant)
+        // Assurez-vous que playerMovement n'est pas null
+        if (playerMovement != null)
         {
-            // Obtient la position cible de la caméra
-            Vector3 targetPosition = Vector3.zero;
-
-            // Vérifie si le joueur est sur une bûche
-            if (playerMovement.currentLog != null)
-            {
-                // Si le joueur est sur une bûche, la caméra suit la position de la bûche
-                targetPosition = playerMovement.currentLog.position;
-            }
-            else
-            {
-                // Si le joueur n'est pas sur une bûche, la caméra suit la position du joueur
-                targetPosition = playerMovement.currentPosition;
-            }
-
-            // Ajoute l'offset à la position cible de la caméra
-            targetPosition += offset;
-
+            // Calcule la position cible de la caméra basée sur la position du joueur et le décalage
+            Vector3 targetPosition = playerMovement.currentPosition + offset;
             // Interpole doucement la position de la caméra vers la position cible
             transform.position = Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
+        }
+        else
+        {
+            Debug.LogError("PlayerMovement script not assigned in CameraFollow script.", this);
         }
     }
 }

@@ -8,7 +8,7 @@ public class RetourVoitures : MonoBehaviour
     {
         if (other.CompareTag("voiture"))
         {
-            other.transform.Translate(0,0, -40);
+            other.transform.Translate(0,0, -19);
         }
     }
 }
