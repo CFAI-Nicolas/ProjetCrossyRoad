@@ -15,7 +15,7 @@ C:/Users/Nico/Documents/EcoleInge/PO C#/Projet Crossy Road/ProjetCrossyRoad
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50290
+53467
 Successfully changed project path to: C:/Users/Nico/Documents/EcoleInge/PO C#/Projet Crossy Road/ProjetCrossyRoad
 C:/Users/Nico/Documents/EcoleInge/PO C#/Projet Crossy Road/ProjetCrossyRoad
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Nico/Documents/EcoleInge/PO C#/Projet Crossy Road/ProjetCrossyRoad
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [28196] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2266091752 [EditorId] 2266091752 [Version] 1048832 [Id] WindowsEditor(7,MarseilleLove) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [31112] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2112858542 [EditorId] 2112858542 [Version] 1048832 [Id] WindowsEditor(7,MarseilleLove) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [28196] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2266091752 [EditorId] 2266091752 [Version] 1048832 [Id] WindowsEditor(7,MarseilleLove) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [31112] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2112858542 [EditorId] 2112858542 [Version] 1048832 [Id] WindowsEditor(7,MarseilleLove) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 9.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 11.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.19f1 (244b723c30a6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007818 seconds.
-- Loaded All Assemblies, in  0.521 seconds
+Registered in 0.009142 seconds.
+- Loaded All Assemblies, in  0.514 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.335 seconds
-Domain Reload Profiling: 854ms
-	BeginReloadAssembly (201ms)
+- Finished resetting the current domain, in  0.490 seconds
+Domain Reload Profiling: 1002ms
+	BeginReloadAssembly (148ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (174ms)
-		LoadAssemblies (198ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (228ms)
+		LoadAssemblies (145ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (172ms)
-			TypeCache.Refresh (170ms)
-				TypeCache.ScanAssembly (155ms)
+		AnalyzeDomain (225ms)
+			TypeCache.Refresh (223ms)
+				TypeCache.ScanAssembly (204ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (335ms)
+	FinalizeReload (491ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (262ms)
+		SetupLoadedEditorAssemblies (390ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (10ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (178ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (267ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,426 +115,56 @@ Domain Reload Profiling: 854ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.781 seconds
-Refreshing native plugins compatible for Editor in 4.23 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.434 seconds
+Refreshing native plugins compatible for Editor in 4.56 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.963 seconds
-Domain Reload Profiling: 1740ms
-	BeginReloadAssembly (178ms)
+- Finished resetting the current domain, in  1.196 seconds
+Domain Reload Profiling: 2625ms
+	BeginReloadAssembly (337ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (486ms)
-		LoadAssemblies (373ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (211ms)
-			TypeCache.Refresh (189ms)
-				TypeCache.ScanAssembly (169ms)
-			ScanForSourceGeneratedMonoScriptInfo (16ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (963ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (777ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (70ms)
-			ProcessInitializeOnLoadAttributes (652ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 6.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3107 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (57.3 KB). Loaded Objects now: 3570.
-Memory consumption went from 126.8 MB to 126.7 MB.
-Total: 4.899900 ms (FindLiveObjects: 0.429500 ms CreateObjectMapping: 0.188200 ms MarkObjects: 4.126300 ms  DeleteObjects: 0.154300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 8075.287302 seconds.
-  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
-  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ea1972c79e2717dc61467c8ce2277e') in 0.059741 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
-  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f603c20fc83149d951696e0b5ff78e') in 0.002128 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
-  artifactKey: Guid(3997e2241185407d80309a82f9148466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc using Guid(3997e2241185407d80309a82f9148466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb17b39ab37ff5c4a0c347358e9d790f') in 0.001238 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
-  artifactKey: Guid(c334973cef89a9840b0b0c507e0377ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc using Guid(c334973cef89a9840b0b0c507e0377ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4948e3d3b156c358d774882348c13a') in 0.001188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.604679 seconds.
-  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
-  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd561f6893285eb56121731527b8748f5') in 0.071840 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.638 seconds
-Refreshing native plugins compatible for Editor in 3.16 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.572 seconds
-Domain Reload Profiling: 2205ms
-	BeginReloadAssembly (205ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (46ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (51ms)
 	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (318ms)
-		LoadAssemblies (424ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (956ms)
+		LoadAssemblies (694ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1572ms)
+		AnalyzeDomain (440ms)
+			TypeCache.Refresh (333ms)
+				TypeCache.ScanAssembly (272ms)
+			ScanForSourceGeneratedMonoScriptInfo (96ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1197ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (823ms)
+		SetupLoadedEditorAssemblies (932ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (680ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 6.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3086 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.2 KB). Loaded Objects now: 3576.
-Memory consumption went from 124.5 MB to 124.5 MB.
-Total: 10.686900 ms (FindLiveObjects: 0.429800 ms CreateObjectMapping: 0.360300 ms MarkObjects: 9.792600 ms  DeleteObjects: 0.101600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.584 seconds
-Refreshing native plugins compatible for Editor in 6.07 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.421 seconds
-Domain Reload Profiling: 3002ms
-	BeginReloadAssembly (179ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (311ms)
-		LoadAssemblies (392ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (2422ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (708ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (576ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 5.18 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3579.
-Memory consumption went from 126.7 MB to 126.7 MB.
-Total: 4.695300 ms (FindLiveObjects: 0.480300 ms CreateObjectMapping: 0.304500 ms MarkObjects: 3.795800 ms  DeleteObjects: 0.113000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.760 seconds
-Refreshing native plugins compatible for Editor in 4.43 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.456 seconds
-Domain Reload Profiling: 3212ms
-	BeginReloadAssembly (240ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (385ms)
-		LoadAssemblies (504ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (16ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2457ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (735ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (606ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 6.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3582.
-Memory consumption went from 128.7 MB to 128.6 MB.
-Total: 5.816500 ms (FindLiveObjects: 0.367300 ms CreateObjectMapping: 0.136900 ms MarkObjects: 5.228800 ms  DeleteObjects: 0.082000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.614 seconds
-Refreshing native plugins compatible for Editor in 4.77 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.639 seconds
-Domain Reload Profiling: 2249ms
-	BeginReloadAssembly (202ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (298ms)
-		LoadAssemblies (397ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1640ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (837ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (99ms)
-			ProcessInitializeOnLoadAttributes (669ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (769ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (19ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 4.93 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 7.06 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3585.
-Memory consumption went from 130.6 MB to 130.6 MB.
-Total: 6.057900 ms (FindLiveObjects: 0.434900 ms CreateObjectMapping: 0.225000 ms MarkObjects: 5.318300 ms  DeleteObjects: 0.077500 ms)
+Unloading 3108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.0 KB). Loaded Objects now: 3571.
+Memory consumption went from 127.0 MB to 127.0 MB.
+Total: 7.767500 ms (FindLiveObjects: 0.550000 ms CreateObjectMapping: 0.240900 ms MarkObjects: 6.791900 ms  DeleteObjects: 0.182200 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.107 seconds
-Refreshing native plugins compatible for Editor in 3.96 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  6.693 seconds
-Domain Reload Profiling: 8796ms
-	BeginReloadAssembly (181ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (1831ms)
-		LoadAssemblies (1913ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (7ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (6693ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (768ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (612ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 5.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.2 KB). Loaded Objects now: 3588.
-Memory consumption went from 132.5 MB to 132.5 MB.
-Total: 4.094600 ms (FindLiveObjects: 0.306400 ms CreateObjectMapping: 0.111400 ms MarkObjects: 3.604700 ms  DeleteObjects: 0.070700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -551,152 +181,62 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1836.837681 seconds.
-  path: Assets/Scripts/Mouvement.cs
-  artifactKey: Guid(b42b455c86f075f4b8fd8f2f2d2cbd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Mouvement.cs using Guid(b42b455c86f075f4b8fd8f2f2d2cbd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8cdd937dc0712f4b38d69a64e8f8c6') in 0.004433 seconds
+  Time since last request: 85621.116044 seconds.
+  path: Assets/Prefabs/Grille
+  artifactKey: Guid(dfb70eeda12c7494faaac2dbded6ee4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille using Guid(dfb70eeda12c7494faaac2dbded6ee4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd338ebe266e30ecff026a51381273b1') in 0.003119 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.539 seconds
-Refreshing native plugins compatible for Editor in 4.11 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.559 seconds
-Domain Reload Profiling: 2095ms
-	BeginReloadAssembly (189ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (246ms)
-		LoadAssemblies (341ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (13ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1560ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (899ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (760ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+- Loaded All Assemblies, in  0.640 seconds
 Refreshing native plugins compatible for Editor in 6.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3086 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3591.
-Memory consumption went from 134.2 MB to 134.2 MB.
-Total: 6.092000 ms (FindLiveObjects: 0.327100 ms CreateObjectMapping: 0.227300 ms MarkObjects: 5.430300 ms  DeleteObjects: 0.105700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 39.545258 seconds.
-  path: Assets/Sounds/bg 1.mp3
-  artifactKey: Guid(7ac07645420d7ed4aa83158f0aa7874a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/bg 1.mp3 using Guid(7ac07645420d7ed4aa83158f0aa7874a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64413bb6c64183d27ea2eca28004ef13') in 0.188806 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Sounds/sound.mp3
-  artifactKey: Guid(ab62b4c20e0b88f4da5c4063895a563d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/sound.mp3 using Guid(ab62b4c20e0b88f4da5c4063895a563d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9237266ddbac15bbaefa6ead8266f1d0') in 0.017440 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sounds/sound 1.mp3
-  artifactKey: Guid(e5c15cd7c2199b84cb493ebe720ffd34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/sound 1.mp3 using Guid(e5c15cd7c2199b84cb493ebe720ffd34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32894a84d9dc10fc68fe5c782a1eb7c8') in 0.017778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.546 seconds
-Refreshing native plugins compatible for Editor in 4.03 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.026 seconds
-Domain Reload Profiling: 2569ms
-	BeginReloadAssembly (179ms)
+- Finished resetting the current domain, in  2.507 seconds
+Domain Reload Profiling: 3141ms
+	BeginReloadAssembly (225ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (266ms)
-		LoadAssemblies (337ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (309ms)
+		LoadAssemblies (408ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (9ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (2026ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2507ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (615ms)
+		SetupLoadedEditorAssemblies (897ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (69ms)
-			ProcessInitializeOnLoadAttributes (507ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (741ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 3.36 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 6.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3603.
-Memory consumption went from 140.6 MB to 140.6 MB.
-Total: 3.466200 ms (FindLiveObjects: 0.287600 ms CreateObjectMapping: 0.098900 ms MarkObjects: 3.008700 ms  DeleteObjects: 0.069200 ms)
+Unloading 23 unused Assets / (31.2 KB). Loaded Objects now: 3574.
+Memory consumption went from 124.7 MB to 124.7 MB.
+Total: 6.416100 ms (FindLiveObjects: 0.489600 ms CreateObjectMapping: 0.185100 ms MarkObjects: 5.572300 ms  DeleteObjects: 0.167500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -713,8 +253,1597 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 42.152869 seconds.
+  path: Assets/Prefabs/Obstacle
+  artifactKey: Guid(ea68fd42c87357c47ac1d72ab084fd1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacle using Guid(ea68fd42c87357c47ac1d72ab084fd1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63afda403650856e94e698b7c63c19a9') in 0.004300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 55.932423 seconds.
+  path: Assets/Prefabs/Grille/grass
+  artifactKey: Guid(79fe154ad4e81b74499da03e82ed8aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/grass using Guid(79fe154ad4e81b74499da03e82ed8aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991e21f5ca3100db7dfd3d3106349fef') in 0.000888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 17.181466 seconds.
+  path: Assets/Prefabs/Grille/Water
+  artifactKey: Guid(bf206328e9d58ad4bac645d4f7742637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water using Guid(bf206328e9d58ad4bac645d4f7742637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b8d1baec841712bdec34f6a97a49ee') in 0.000961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 17.929965 seconds.
+  path: Assets/Prefabs/Grille/Road
+  artifactKey: Guid(e1a469ef54a421741a29dccef9a29f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road using Guid(e1a469ef54a421741a29dccef9a29f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd54c368b30452b62b8b030b5b30fa06') in 0.000517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.417584 seconds.
+  path: Assets/Prefabs/Grille/Grass
+  artifactKey: Guid(79fe154ad4e81b74499da03e82ed8aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass using Guid(79fe154ad4e81b74499da03e82ed8aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21bba0532413091e6f9403c592f5a3d5') in 0.000782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.125571 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab
+  artifactKey: Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab using Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8d70ac8edcee3640f9c4d6ef3a2cbc8') in 0.140251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 18.767672 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab
+  artifactKey: Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab using Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0099360f2c18849391f581de2e77f3f1') in 0.020782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 4.002475 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab
+  artifactKey: Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab using Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8221b3a985931bad6f93318ee995f05e') in 0.023085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 7.456076 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab
+  artifactKey: Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 1.prefab using Guid(d2af76715d1433b4bb269aa929e09334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd736f3440e3b2a6ea95b3acfd5c05d19') in 0.019240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 3.731756 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab
+  artifactKey: Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab using Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33576b45ba2b9dc6853f1c0ec76b931b') in 0.010815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 18.384619 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab
+  artifactKey: Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab using Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d9b34e8b54ed59c254698a10446937') in 0.020184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 5.029383 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab
+  artifactKey: Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab using Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09c96e7ee0ed0daa12d139b2777b762') in 0.016577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 8.682854 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab
+  artifactKey: Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab using Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4261204955936f247a2c02f4a9b30a3') in 0.010352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 7.766881 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab
+  artifactKey: Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab using Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891e0053dcde8cdb8f24d1265883b00e') in 0.020087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 5.055718 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab
+  artifactKey: Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 2.prefab using Guid(5687044815715b540a674d6ecb1a5127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cddf4566c2b0443d99f4fd8d0434d89') in 0.018690 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 66.016220 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab
+  artifactKey: Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab using Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e837f69663025c5d33f2069b5ffdfb46') in 0.021628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 6.229237 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab
+  artifactKey: Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab using Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64bc335bb9c354e5ed5363deb2f069a') in 0.016590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 1.174052 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab
+  artifactKey: Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab using Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '175b880e7ae34487118e387cd85db8bb') in 0.019607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 9.497126 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab
+  artifactKey: Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab using Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb8245043256b7e56a7df96aa796c3a') in 0.019106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 12.652600 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 4.prefab
+  artifactKey: Guid(f55c1685fd8bf5a469c623b0213fdcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 4.prefab using Guid(f55c1685fd8bf5a469c623b0213fdcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f65194103256e6dd333a4917422d23f') in 0.009897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 3.321458 seconds.
+  path: Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab
+  artifactKey: Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Grass/Grille (0) 3.prefab using Guid(96edb70a94f189443865259fbeee0b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4738749d1f2b5553d8ed2a927d53bdbb') in 0.030844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.587 seconds
+Refreshing native plugins compatible for Editor in 3.93 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.749 seconds
+Domain Reload Profiling: 2333ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (292ms)
+		LoadAssemblies (378ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1750ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (826ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (691ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.3 KB). Loaded Objects now: 3587.
+Memory consumption went from 131.1 MB to 131.1 MB.
+Total: 5.805800 ms (FindLiveObjects: 0.723500 ms CreateObjectMapping: 0.318700 ms MarkObjects: 4.661100 ms  DeleteObjects: 0.100500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 77.840077 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 1.prefab
+  artifactKey: Guid(242ad97f868aa824cb5deb24b29314f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 1.prefab using Guid(242ad97f868aa824cb5deb24b29314f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdeed9de59b99db29d9039e503ddfdde') in 0.111994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 4.514224 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 2.prefab
+  artifactKey: Guid(71cbc850c38f3cc4986adcc09a2a750c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 2.prefab using Guid(71cbc850c38f3cc4986adcc09a2a750c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddca39baa3dfb16bfd739d19e69d8d21') in 0.015371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 1.435054 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 3.prefab
+  artifactKey: Guid(cd7d96d899163884ab81f9e3151cc16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 3.prefab using Guid(cd7d96d899163884ab81f9e3151cc16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448db45c5d55e09daf9e82309475cbe4') in 0.011898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 7.530565 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2).prefab
+  artifactKey: Guid(79c7bd9fe016f844f80b4c1a8db504c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2).prefab using Guid(79c7bd9fe016f844f80b4c1a8db504c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ee54c430290417ffbf18da416e6b0e') in 0.020991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 67
+========================================================================
+Received Import Request.
+  Time since last request: 4.348789 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 4.prefab
+  artifactKey: Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 4.prefab using Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448283568875e8df339e3e5969d92f05') in 0.011956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 14.737750 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2).prefab
+  artifactKey: Guid(79c7bd9fe016f844f80b4c1a8db504c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2).prefab using Guid(79c7bd9fe016f844f80b4c1a8db504c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61bfb1640e11744dfbce388a0aee9ca') in 0.020567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 11.939146 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 2.prefab
+  artifactKey: Guid(71cbc850c38f3cc4986adcc09a2a750c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 2.prefab using Guid(71cbc850c38f3cc4986adcc09a2a750c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb5c533abce7487cedb8f561bb6c0a08') in 0.027851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 13.523846 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 3.prefab
+  artifactKey: Guid(cd7d96d899163884ab81f9e3151cc16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 3.prefab using Guid(cd7d96d899163884ab81f9e3151cc16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb6b0aff889945f4adb4a67609d2645') in 0.023604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 68
+========================================================================
+Received Import Request.
+  Time since last request: 7.040853 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 3.prefab
+  artifactKey: Guid(cd7d96d899163884ab81f9e3151cc16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 3.prefab using Guid(cd7d96d899163884ab81f9e3151cc16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a4240d24f3450db0f14b6a3541b831') in 0.022294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 68
+========================================================================
+Received Import Request.
+  Time since last request: 9.965379 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 4.prefab
+  artifactKey: Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 4.prefab using Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77925871c9f2b5a5057a29588b332664') in 0.018414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 68
+========================================================================
+Received Import Request.
+  Time since last request: 1.371238 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 4.prefab
+  artifactKey: Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 4.prefab using Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e32a3ca8810fa22a5e50bd1a1546bd9') in 0.017930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 7.068035 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 4.prefab
+  artifactKey: Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 4.prefab using Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8f5a800dda96aa860d47f19cf032bb') in 0.022204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 7.648180 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 4.prefab
+  artifactKey: Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 4.prefab using Guid(fa25eeab68b98eb428377db1960bd2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f2043a4e85aafa63f5e2eef49736e0') in 0.017496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 10.330103 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 1.prefab
+  artifactKey: Guid(242ad97f868aa824cb5deb24b29314f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 1.prefab using Guid(242ad97f868aa824cb5deb24b29314f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bfca6f222303afacea00657f18ea23') in 0.011742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 68
+========================================================================
+Received Import Request.
+  Time since last request: 5.858617 seconds.
+  path: Assets/Prefabs/Grille/Road/Grille (2) 1.prefab
+  artifactKey: Guid(242ad97f868aa824cb5deb24b29314f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Road/Grille (2) 1.prefab using Guid(242ad97f868aa824cb5deb24b29314f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f3c2f250dcea157e4978aeea00f16f') in 0.025877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 68
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.632 seconds
+Refreshing native plugins compatible for Editor in 4.99 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.671 seconds
+Domain Reload Profiling: 2300ms
+	BeginReloadAssembly (232ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (305ms)
+		LoadAssemblies (418ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1671ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (807ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (670ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3590.
+Memory consumption went from 133.1 MB to 133.0 MB.
+Total: 4.994600 ms (FindLiveObjects: 0.695800 ms CreateObjectMapping: 0.284500 ms MarkObjects: 3.930500 ms  DeleteObjects: 0.079900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.576 seconds
+Refreshing native plugins compatible for Editor in 4.55 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.540 seconds
+Domain Reload Profiling: 2112ms
+	BeginReloadAssembly (196ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (286ms)
+		LoadAssemblies (370ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1541ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (785ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (648ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 5.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3593.
+Memory consumption went from 135.0 MB to 135.0 MB.
+Total: 6.514300 ms (FindLiveObjects: 0.643500 ms CreateObjectMapping: 0.263800 ms MarkObjects: 5.502800 ms  DeleteObjects: 0.101900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.689 seconds
+Refreshing native plugins compatible for Editor in 5.29 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.543 seconds
+Domain Reload Profiling: 2228ms
+	BeginReloadAssembly (232ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (350ms)
+		LoadAssemblies (448ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1543ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (816ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (687ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3596.
+Memory consumption went from 137.0 MB to 136.9 MB.
+Total: 6.319200 ms (FindLiveObjects: 0.593900 ms CreateObjectMapping: 0.200700 ms MarkObjects: 5.450200 ms  DeleteObjects: 0.071600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 258.744113 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1).prefab
+  artifactKey: Guid(72e0297c189002344b6943907a55b60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1).prefab using Guid(72e0297c189002344b6943907a55b60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f9442bcbed5e2a6a656ef279c5f9ce') in 0.103879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 18.751599 seconds.
+  path: Assets/Prefabs/Obstacle/Cube (1).prefab
+  artifactKey: Guid(07c2b784eb4287a4cb21ae2314222397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacle/Cube (1).prefab using Guid(07c2b784eb4287a4cb21ae2314222397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4329ad63f3b5fcbb0342bc43eb861c9') in 0.017864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 13.145771 seconds.
+  path: Assets/Prefabs/Obstacle/Nenuphare.prefab
+  artifactKey: Guid(07c2b784eb4287a4cb21ae2314222397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacle/Nenuphare.prefab using Guid(07c2b784eb4287a4cb21ae2314222397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa289ff55e51c36838380e219aa73f8') in 0.009316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 75.059470 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1).prefab
+  artifactKey: Guid(72e0297c189002344b6943907a55b60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1).prefab using Guid(72e0297c189002344b6943907a55b60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c809fc3e5f00244c5eb8184f6d7bbc') in 0.024902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.592414 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 1.prefab
+  artifactKey: Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 1.prefab using Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cbd219ce2c816c513d2ad5ab99c33b') in 0.010938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.875018 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 2.prefab
+  artifactKey: Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 2.prefab using Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7e5d360a690adea7baa90c5dcad3f6') in 0.010205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.444850 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 3.prefab
+  artifactKey: Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 3.prefab using Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff2c9e176d3e13e0dc996b02ff1d735') in 0.011291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 0.450982 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 4.prefab
+  artifactKey: Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 4.prefab using Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8bec8c8309d77532398be63ce96ac55') in 0.011999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 65.180523 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 1.prefab
+  artifactKey: Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 1.prefab using Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66d6ae35fa5eec200fbb6657d57157b') in 0.020772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 8.599515 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 1.prefab
+  artifactKey: Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 1.prefab using Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0acb67bde82b7f897be36a2b88411e0') in 0.018249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 13.276314 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 1.prefab
+  artifactKey: Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 1.prefab using Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979a8a483fb989d8d69118fc06dd3a49') in 0.019897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.384091 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 1.prefab
+  artifactKey: Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 1.prefab using Guid(5ac4a682b73163e43893d7dda3e651f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0062538a4c0abd0b48f4c967355122') in 0.016672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 14.933222 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 2.prefab
+  artifactKey: Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 2.prefab using Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a034fd600637e99902b5c7e9a03edc82') in 0.019571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 7.589902 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 2.prefab
+  artifactKey: Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 2.prefab using Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f474864a56c374ac619f09b662f7ec') in 0.026474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.742081 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 2.prefab
+  artifactKey: Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 2.prefab using Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0fa31e20f204682ba92affdebc7cb7') in 0.019369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 7.144005 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 2.prefab
+  artifactKey: Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 2.prefab using Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34864dfec1bcc9f81529d9c3f1f4efb') in 0.016577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.551542 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 2.prefab
+  artifactKey: Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 2.prefab using Guid(2f32998a8aa34b14598edd584e3bac12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529543e57e7566eff36f7e62a9684d47') in 0.019623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 8.927555 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 3.prefab
+  artifactKey: Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 3.prefab using Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b9f20d4d186a5750531f02ea985b80') in 0.015651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 16.526692 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 3.prefab
+  artifactKey: Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 3.prefab using Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e3a179b6da0d9624811ec4ae2356b8') in 0.018860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 4.209514 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 3.prefab
+  artifactKey: Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 3.prefab using Guid(5bcc14520cd7ec04faa650e868300b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ac7294b74c204925681d65c8949045') in 0.017012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 10.749436 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 4.prefab
+  artifactKey: Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 4.prefab using Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca7d5288162a4a39aa0f65e69982a02') in 0.034156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.810620 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 4.prefab
+  artifactKey: Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 4.prefab using Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf393782b8423e183263e2acc28eb5d') in 0.018380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.069571 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 4.prefab
+  artifactKey: Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 4.prefab using Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1741e59340ee6d528f846ea2b6db6d') in 0.016301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 3.804284 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (1) 4.prefab
+  artifactKey: Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (1) 4.prefab using Guid(cbe8ef7d70b818d4381ba5e7e961fc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e09fa767da637f84c99bd23f2f21309') in 0.016703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.516 seconds
+Refreshing native plugins compatible for Editor in 4.49 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.567 seconds
+Domain Reload Profiling: 2079ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (253ms)
+		LoadAssemblies (330ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1568ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (784ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (642ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 5.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3599.
+Memory consumption went from 138.9 MB to 138.9 MB.
+Total: 5.123300 ms (FindLiveObjects: 0.532100 ms CreateObjectMapping: 0.158300 ms MarkObjects: 4.372700 ms  DeleteObjects: 0.058800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.728 seconds
+Refreshing native plugins compatible for Editor in 4.08 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.478 seconds
+Domain Reload Profiling: 2202ms
+	BeginReloadAssembly (232ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (395ms)
+		LoadAssemblies (509ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1478ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (785ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (641ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 5.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3602.
+Memory consumption went from 140.9 MB to 140.8 MB.
+Total: 4.977300 ms (FindLiveObjects: 0.333200 ms CreateObjectMapping: 0.100900 ms MarkObjects: 4.467200 ms  DeleteObjects: 0.074500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 95.804330 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d25dc4e116b48c5d2d68fc091e0d7c') in 0.094973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 2.200919 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b6fc5ed203acc8ca3b2faa3e8b9186') in 0.009371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.650416 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60650585b8e33df1cb473ab982506d5d') in 0.009759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.329695 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4eeb668c68c2f5bf578a3a6d8e327e') in 0.011748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.333545 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef1d7ff744fc97ca61aff07d3649341') in 0.010844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 12.113018 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0d1d69b44bebbd188be17e93dcf1b3') in 0.016706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 8.046983 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e973ea71e210f200f0774a361207e07e') in 0.017500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 1.426493 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7704cc506bb624ed8f9dac2e1fdee9fd') in 0.019003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 19.187097 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb1bf559ece72d59802afaa6f2168e20') in 0.016640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 5.424847 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492bacc92586dee996803d984eb714cf') in 0.017873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 5.645361 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a36c1969e3823dee415b8d9b10b0288') in 0.017532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 3.828014 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86cc81b0d40601150c590f54def4b163') in 0.016175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 7.855355 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c0dd47e11b7a53b9f1621c0ff274ba') in 0.018592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 0.788667 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b033eb244067df7389d0b1e7b3885f') in 0.019956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 88
+========================================================================
+Received Import Request.
+  Time since last request: 0.589320 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62940a7e3d8ad3cca5c7112a51122e08') in 0.017652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 97
+========================================================================
+Received Import Request.
+  Time since last request: 0.185795 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57cb067850bb295a6b16f42439dfa47a') in 0.017909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 13.718421 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2b06adc5944d132a74d8ea3a996dcc') in 0.016626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 6.227599 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607a68c50699f0db82f8605bdb247d80') in 0.017297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.829349 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c356b564ebb723de2f30d9daebf9711b') in 0.020396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 4.015213 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87f41ae8f82f0b8999ef95c6524e19d') in 0.018061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 4.431970 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 1.prefab
+  artifactKey: Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 1.prefab using Guid(7529d655fcc46ca4e94371aa4e4170eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb0732b60f7668488284b7c605c3ab2') in 0.018306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 13.306647 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd96edcafee94f665267631f4bd5600') in 0.016590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.796869 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a58fe0d7d83dff89f6912bf5cd9b83c') in 0.017035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.576308 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7c8429c1578425d6af122963bdca5c') in 0.019019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.183393 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398f6c31631f2d3260b51267bb37c76b') in 0.018756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 8.056690 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e73c36e84b30789cbbea8611f3392f') in 0.017885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 3.421630 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3782c0404fe5e16f4ccda5eb329b01') in 0.022608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 3.615649 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae193c9d8e12f297689d0a51905c2c36') in 0.021633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 7.661817 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 2.prefab
+  artifactKey: Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 2.prefab using Guid(0572afdf4380dd8429ff4b58e9775bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c541ea5f0a79d3bc604705f9a391815') in 0.020145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 4.445906 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cefd9006d935e22cd09176dac8685eb') in 0.019862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 4.413066 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1656bc2912651a5264b33ef0343af171') in 0.010738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.596799 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea42fbba0a3627afd22ca8993f0fd01a') in 0.010964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.225890 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba886c2256bbad41af3e82420828f83') in 0.012154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 0.181761 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28eeee7915f68d042f1c63ca2b3c9193') in 0.017537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 0.497666 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978f0db8ee71c66fe4cbb72bd7041d94') in 0.017198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 88
+========================================================================
+Received Import Request.
+  Time since last request: 0.086955 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faeab1ea1e32ba3349f41647d52ba758') in 0.017317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 11.277995 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429231413aa08ae75d191eabb910f2ff') in 0.017924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.222516 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26bbf4693ad678d70992b44bcf663bad') in 0.018250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.830753 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448853a4f1e22f28f18e9f6152dc3854') in 0.016608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.644043 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc90004a94c1b5af6e735ad2cae20139') in 0.020394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.808846 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1fe59d89478796eddf6aad976b6cba') in 0.018531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 4.430668 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7728ed166a12dbde75a9e45bad4a68') in 0.018875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.224435 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 3.prefab
+  artifactKey: Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 3.prefab using Guid(cc6526608d31ca24297fdaa86486b593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3846790e3e73106cb9e53a95aa046cf9') in 0.017081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 5.247789 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f455f6805721858a2511c668fd3044ed') in 0.012266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.176531 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3830b889f5f762216a1c9acdfe52c8') in 0.019935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.177301 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0ee5e3dd17e9eec098c72b6d453698') in 0.011280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 0.196404 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad105098196d33a6783ca29d5c4481b') in 0.010396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 7.262737 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66eba32c297537431477f423164d6e8b') in 0.019921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 3.613695 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1950019bc9bf41bcf8e09409736609') in 0.020660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 3.824897 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f3b621256242e7fa757530c0a78e30') in 0.018076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 4.214618 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 4.prefab
+  artifactKey: Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 4.prefab using Guid(49c6a43c3bc38904098ab28e40ec1f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69494dc70011de1b219abc77d7e333f2') in 0.016598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 4.655982 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ceed6dfd5357cfd8154d4d89fc68e9') in 0.013085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.159417 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259837442ab73c0d7c49c289dcfa34be') in 0.010571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.216665 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc5bbb0b3158948d9c27133e31e82899') in 0.011269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 0.195082 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48541b2b98463379f7d9901a87c9c4f5') in 0.013369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 79
+========================================================================
+Received Import Request.
+  Time since last request: 0.189918 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ea3d03d2145a38e81e98d7999442c2') in 0.016410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 88
+========================================================================
+Received Import Request.
+  Time since last request: 0.188564 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062b4473f481d8074543db6db5b20ad4') in 0.016273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 97
+========================================================================
+Received Import Request.
+  Time since last request: 0.993138 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb2164c750aef2da2e4f64defdeeb3e') in 0.016502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 5.449300 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4268db05033d2ecda50a9ff270359ee') in 0.017717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.623535 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ddb4e911a1312784cadd7eb5815d82') in 0.018483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.808637 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2790a49e983b045e902b6178cf0ef781') in 0.017856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.639179 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409aabb504d506ea9be1e68de0011b38') in 0.016852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 4.015144 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e395a5a1d43128597f02449a9fcb5ec0') in 0.020142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.814871 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d9b7712c9478f20eb8ab32930e957c') in 0.017168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 3.450325 seconds.
+  path: Assets/Prefabs/Grille/Water/Grille (3) 5.prefab
+  artifactKey: Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grille/Water/Grille (3) 5.prefab using Guid(6564a8729401179428235de679491fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0306c363e23df1bfe91eeb248eb80cf6') in 0.025659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.536 seconds
+Refreshing native plugins compatible for Editor in 4.95 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.771 seconds
+Domain Reload Profiling: 2304ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (252ms)
+		LoadAssemblies (331ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1772ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (785ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (643ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 5.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3605.
+Memory consumption went from 142.9 MB to 142.8 MB.
+Total: 5.578900 ms (FindLiveObjects: 0.554900 ms CreateObjectMapping: 0.178100 ms MarkObjects: 4.741200 ms  DeleteObjects: 0.102100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.518 seconds
+Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.505 seconds
+Domain Reload Profiling: 2020ms
+	BeginReloadAssembly (188ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (242ms)
+		LoadAssemblies (329ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1505ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (754ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (619ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 3.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3608.
+Memory consumption went from 144.8 MB to 144.8 MB.
+Total: 4.324600 ms (FindLiveObjects: 0.299700 ms CreateObjectMapping: 0.124900 ms MarkObjects: 3.843100 ms  DeleteObjects: 0.055600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.527 seconds
+Refreshing native plugins compatible for Editor in 4.63 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.530 seconds
+Domain Reload Profiling: 2053ms
+	BeginReloadAssembly (185ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (239ms)
+		LoadAssemblies (331ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1531ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (815ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (668ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 5.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3611.
+Memory consumption went from 146.7 MB to 146.7 MB.
+Total: 4.470500 ms (FindLiveObjects: 0.406100 ms CreateObjectMapping: 0.176800 ms MarkObjects: 3.817800 ms  DeleteObjects: 0.067900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

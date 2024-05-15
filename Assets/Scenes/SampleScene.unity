@@ -155,9 +155,26 @@ MonoBehaviour:
   forwardDistance: 1
   grille:
   - {fileID: 8444768022287406592, guid: f9d6dbf35da1ee4409ef9320351654cd, type: 3}
-  - {fileID: 1694357736347602823, guid: 72e0297c189002344b6943907a55b60d, type: 3}
+  - {fileID: 8444768022287406592, guid: d2af76715d1433b4bb269aa929e09334, type: 3}
+  - {fileID: 8444768022287406592, guid: 5687044815715b540a674d6ecb1a5127, type: 3}
+  - {fileID: 8444768022287406592, guid: 96edb70a94f189443865259fbeee0b56, type: 3}
+  - {fileID: 8444768022287406592, guid: f55c1685fd8bf5a469c623b0213fdcff, type: 3}
   - {fileID: 7474214790327812889, guid: 79c7bd9fe016f844f80b4c1a8db504c7, type: 3}
+  - {fileID: 7474214790327812889, guid: 242ad97f868aa824cb5deb24b29314f2, type: 3}
+  - {fileID: 7474214790327812889, guid: 71cbc850c38f3cc4986adcc09a2a750c, type: 3}
+  - {fileID: 7474214790327812889, guid: cd7d96d899163884ab81f9e3151cc16b, type: 3}
+  - {fileID: 7474214790327812889, guid: fa25eeab68b98eb428377db1960bd2cc, type: 3}
+  - {fileID: 1694357736347602823, guid: 72e0297c189002344b6943907a55b60d, type: 3}
+  - {fileID: 1694357736347602823, guid: 5ac4a682b73163e43893d7dda3e651f2, type: 3}
+  - {fileID: 1694357736347602823, guid: 2f32998a8aa34b14598edd584e3bac12, type: 3}
+  - {fileID: 1694357736347602823, guid: 5bcc14520cd7ec04faa650e868300b95, type: 3}
+  - {fileID: 1694357736347602823, guid: cbe8ef7d70b818d4381ba5e7e961fc84, type: 3}
   - {fileID: 1694357736347602823, guid: 70b1f8a3b7afc06438f7fe11df9322b1, type: 3}
+  - {fileID: 1694357736347602823, guid: 7529d655fcc46ca4e94371aa4e4170eb, type: 3}
+  - {fileID: 1694357736347602823, guid: 0572afdf4380dd8429ff4b58e9775bb1, type: 3}
+  - {fileID: 1694357736347602823, guid: cc6526608d31ca24297fdaa86486b593, type: 3}
+  - {fileID: 1694357736347602823, guid: 49c6a43c3bc38904098ab28e40ec1f8d, type: 3}
+  - {fileID: 1694357736347602823, guid: 6564a8729401179428235de679491fa1, type: 3}
   Spawngrille:
   - {fileID: 8444768022287406592, guid: 3e7ae8e69cec937409c7a56d22704f79, type: 3}
   GrillesDevantJoueur: 15
@@ -659,7 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 466577074}
-  speed: 0.75
+  speed: 1.5
   offset: {x: 0, y: 0, z: 0}
 --- !u!4 &1668408827
 Transform:
