@@ -60,6 +60,7 @@ public class MenuPause : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu"); // vérifier le nom avec Paul
+        Debug.Log("On a cliqué sur menu");
     }
 
     public void QuitGame()
