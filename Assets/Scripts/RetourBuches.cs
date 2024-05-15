@@ -8,7 +8,7 @@ public class RetourBuches : MonoBehaviour
     {
         if (other.CompareTag("buche"))
         {
-            other.transform.Translate(0,0, -30);
+            other.transform.Translate(0,0, -40);
         }
     }
 }
