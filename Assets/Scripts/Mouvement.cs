@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask CoucheObstacles;
     public LayerMask CoucheEau;
     public float distanceDeVue = 1;
-    public bool vivant = true;
+    public bool vivant = true; // passé en privé
     public Animator animations;
     public AnimationCurve courbe;
     public Transform currentLog; // Champ de classe pour stocker la référence à la buche actuelle
@@ -296,5 +296,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public bool IsAlive
+    {
+        get { return vivant; }
+    }
 
 }
