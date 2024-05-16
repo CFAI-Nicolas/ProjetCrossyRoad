@@ -1157,6 +1157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 466577074}
   gameOverMenu: {fileID: 1106476437}
+  inGameScoreCanvas: {fileID: 1027674302}
   currentScoreText: {fileID: 808834344}
   bestScoreText: {fileID: 2086914401}
 --- !u!1 &869409089 stripped

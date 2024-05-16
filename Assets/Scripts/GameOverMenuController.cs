@@ -8,6 +8,7 @@ public class GameOverMenuController : MonoBehaviour
 {
     public PlayerMovement playerMovement;
     public GameObject gameOverMenu;
+    public GameObject inGameScoreCanvas; // Ajouter la référence au InGameScoreCanvas
     public TextMeshProUGUI currentScoreText;
     public TextMeshProUGUI bestScoreText;
     private AudioSource audioSource;
@@ -15,6 +16,10 @@ public class GameOverMenuController : MonoBehaviour
     void Start()
     {
         gameOverMenu.SetActive(false);
+        if (inGameScoreCanvas != null)
+        {
+            inGameScoreCanvas.SetActive(true); // Assurez-vous que le InGameScoreCanvas est actif au début
+        }
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -40,6 +45,11 @@ public class GameOverMenuController : MonoBehaviour
             audioSource.Play();
         }
 
+        if (inGameScoreCanvas != null)
+        {
+            inGameScoreCanvas.SetActive(false); // Désactive le InGameScoreCanvas
+        }
+
         if (ScoreManager.Instance != null)
         {
             int currentScore = ScoreManager.Instance.GetCurrentScore();
@@ -49,7 +59,7 @@ public class GameOverMenuController : MonoBehaviour
             Debug.Log("Best Score: " + bestScore);
 
             currentScoreText.text = "Score actuel : " + currentScore.ToString();
-            bestScoreText.text = "Ancien record : " + bestScore.ToString();
+            bestScoreText.text = "Record : " + bestScore.ToString();
 
             // Sauvegarder le score actuel après l'affichage
             ScoreManager.Instance.SaveCurrentScore();
