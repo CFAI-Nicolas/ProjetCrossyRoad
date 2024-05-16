@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-//using static System.Net.Mime.MediaTypeNames;
+using TMPro;
 
 public class GameOverMenuController : MonoBehaviour
 {
     public PlayerMovement playerMovement;
     public GameObject gameOverMenu;
+    public TextMeshProUGUI currentScoreText;
+    public TextMeshProUGUI lastScoreText;
+    public TextMeshProUGUI bestScoreText;
     private AudioSource audioSource;
 
     void Start()
@@ -18,13 +21,11 @@ public class GameOverMenuController : MonoBehaviour
 
     void Update()
     {
-        // Vérifie si le menu de fin de partie doit être affiché
         CheckPlayerStatus();
     }
 
     void CheckPlayerStatus()
     {
-        // Vérifie si le joueur n'est plus vivant et si le menu de fin de partie n'est pas déjà affiché
         if (!playerMovement.IsAlive && !gameOverMenu.activeSelf)
         {
             ShowGameOverMenu();
@@ -34,26 +35,60 @@ public class GameOverMenuController : MonoBehaviour
     public void ShowGameOverMenu()
     {
         gameOverMenu.SetActive(true);
+
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
+        if (ScoreManager.Instance != null)
+        {
+            int currentScore = ScoreManager.Instance.GetCurrentScore();
+            int lastScore = ScoreManager.Instance.GetLastScore();
+            int bestScore = ScoreManager.Instance.GetBestScore();
+
+            Debug.Log("Current Score: " + currentScore);
+            Debug.Log("Last Score: " + lastScore);
+            Debug.Log("Best Score: " + bestScore);
+
+            currentScoreText.text = "Score actuel : " + currentScore.ToString();
+            lastScoreText.text = "Dernier score : " + lastScore.ToString();
+            bestScoreText.text = "Record : " + bestScore.ToString();
+
+            // Sauvegarder le score actuel après l'affichage
+            ScoreManager.Instance.SaveCurrentScore();
+        }
+        else
+        {
+            Debug.LogError("ScoreManager.Instance is null");
+        }
     }
 
     public void RestartGame()
     {
-        audioSource.Stop();
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene("SampleScene");
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMainMenu()
     {
-        audioSource.Stop();
-        // SceneManager.LoadScene("MainMenu"); // à activer après le merge avec la branche de Paul
-        SceneManager.LoadScene("Demo1"); // Utilisation correcte du nom de la scène
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+        // SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
     {
-        audioSource.Stop();
-        UnityEngine.Debug.Log("Fermeture du jeu"); // vérifier après compilation
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+        Debug.Log("Fermeture du jeu");
         Application.Quit();
     }
 }

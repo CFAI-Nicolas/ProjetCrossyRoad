@@ -1,3 +1,4 @@
+// Mouvement.cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,11 +66,21 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
+
+        if (currentLog != null)
+        {
+            currentPosition = new Vector3(currentLog.position.x, transform.position.y, transform.position.z);
+        }
+        else
+        {
+            currentPosition = new Vector3(lateralPosition, 0, forwardDistance);
+        }
+
+        transform.position = Vector3.Lerp(transform.position, currentPosition, speed * Time.deltaTime);
     }
 
     public IEnumerator ChangePosition()
     {
-        // Si le joueur est sur une buche, utilisez la position X de la buche pour mettre à jour la position latérale du joueur
         if (currentLog != null)
         {
             lateralPosition = Mathf.RoundToInt(currentLog.position.x);
@@ -84,8 +95,7 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(1f / speed);
         }
     }
-
-
+    /*
     public void MoveForward()
     {
         Graphique.eulerAngles = new Vector3(0, 0, 0);
@@ -94,6 +104,40 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         forwardDistance++;
+        ScoreManager.Instance.IncrementScore(); // Incrémente le score
+
+        if (forwardDistance > maxForwardDistance)
+        {
+            maxForwardDistance = forwardDistance;
+            monde.CreateGrille();
+        }
+
+        RaycastHit logHit;
+        if (Physics.Raycast(transform.position, Vector3.down, out logHit, 1f, CoucheEau))
+        {
+            if (logHit.collider.CompareTag("buche"))
+            {
+                MoveUpOnLog(logHit.collider.gameObject);
+                return;
+            }
+        }
+
+        StartCoroutine(ChangePosition());
+    }
+    */
+    public void MoveForward()
+    {
+        Graphique.eulerAngles = new Vector3(0, 0, 0);
+
+        if (RegardAvant())
+        {
+            Debug.Log("Obstacle détecté, mouvement interrompu.");
+            return;
+        }
+
+        forwardDistance++;
+        ScoreManager.Instance.IncrementScore(); 
+        Debug.Log("Score incrémenté : " + ScoreManager.Instance.GetCurrentScore());
 
         if (forwardDistance > maxForwardDistance)
         {
@@ -114,76 +158,49 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // Si le joueur n'est pas sur une buche, continuez avec le mouvement normal
+        Debug.Log("Déplacement normal.");
         StartCoroutine(ChangePosition());
     }
 
+
+
     public void MoveUpOnLog(GameObject log)
     {
-        // S'assurer que le joueur est sur la buche
         if (log != null)
         {
-            // Stocker la bûche actuelle pour référence
             currentLog = log.transform;
-            Debug.Log("Touche buche" + currentLog);
 
-            // Si le joueur n'est pas déjà en train de bouger avec la bûche, déplacez-le sur la bûche
             if (!IsMovingWithLog())
             {
-                // Sauvegarder la position actuelle du joueur sur les axes X et Y
                 Vector3 currentPlayerPosition = transform.position;
-
-                // Déplacer le joueur sur la bûche en ajustant uniquement les axes X et Y
                 transform.position = new Vector3(currentLog.position.x, currentPlayerPosition.y, currentPlayerPosition.z);
-
-                // Mettre à jour la position latérale du joueur pour correspondre à la position horizontale de la bûche
                 lateralPosition = (int)currentLog.position.x;
-
-                // Déplacer le joueur sur la bûche
                 transform.SetParent(currentLog);
-
-                // Appeler MoveWithLog pour suivre la bûche
                 StartCoroutine(MoveWithLog());
             }
         }
     }
 
-
-
-
     private bool IsMovingWithLog()
     {
-        // Vérifie si le joueur est déjà en train de bouger avec la bûche
         return currentLog != null && Mathf.Approximately(speed, 0f);
     }
 
-
     private IEnumerator MoveWithLog()
     {
-        // Assurez-vous que la bûche et le joueur sont correctement configurés
         if (currentLog == null)
         {
             Debug.LogError("La bûche de référence est null.");
             yield break;
         }
 
-        Debug.Log("Début du mouvement avec la bûche.");
-
-        // Tant que le joueur est sur la bûche, ajustez sa position relative à la bûche pour suivre son mouvement
         while (currentLog != null)
         {
-            // Calculer la différence de position sur l'axe X entre la bûche et le joueur
             float xDifference = currentLog.position.x - transform.position.x;
-
-            // Mettre à jour la position du joueur relativement à la bûche sur l'axe X
             transform.position += new Vector3(xDifference, 0, 0);
-
             yield return null;
         }
-
-        Debug.Log("Fin du mouvement avec la bûche.");
     }
-
 
     public void MoveBackward()
     {
@@ -198,7 +215,6 @@ public class PlayerMovement : MonoBehaviour
             forwardDistance += -1;
         }
         StartCoroutine(ChangePosition());
-
     }
 
     public void MoveLateral(int direction)
@@ -212,7 +228,6 @@ public class PlayerMovement : MonoBehaviour
         lateralPosition += direction;
         lateralPosition = Mathf.Clamp(lateralPosition, -5, 5);
         StartCoroutine(ChangePosition());
-
     }
 
     public bool RegardAvant()
@@ -244,7 +259,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("buche"))
         {
-            Debug.Log("Quitte buche");
             transform.SetParent(null);
             currentLog = null;
         }
@@ -254,28 +268,20 @@ public class PlayerMovement : MonoBehaviour
     public void Noyer()
     {
         RaycastHit hit;
-
-        // Ajuste la hauteur de départ du rayon vers le bas pour qu'il commence légèrement au-dessus de la position actuelle du joueur et reculé
         Vector3 rayStartPoint = transform.position + Vector3.up * 0.1f;
 
-        // Lance un rayon vers le bas à partir du point ajusté et affiche-le en rouge dans l'éditeur Unity
         Debug.DrawRay(rayStartPoint, Vector3.down * 3, Color.red);
 
-        // Vérifie s'il y a une collision avec un objet
         if (Physics.Raycast(rayStartPoint, Vector3.down, out hit, 3))
         {
-            // Si le rayon touche un objet
             if (hit.collider.CompareTag("eau"))
             {
-                // Vérifie si le joueur est sur une buche
                 if (hit.collider.CompareTag("buche"))
                 {
-                    return; // Si le joueur est sur une buche, ne pas déclencher l'animation de noyade
+                    return;
                 }
                 animations.SetTrigger("Noyer");
-                // Définit vivant sur false pour indiquer que le joueur est noyé
                 vivant = false;
-                // Jouer le son "deadwater"
                 AudioSource audioSource = GetComponent<AudioSource>();
                 audioSource.PlayOneShot(deadwater);
             }
@@ -284,13 +290,10 @@ public class PlayerMovement : MonoBehaviour
 
     void CheckBoundsAndKill()
     {
-        // Obtenez la position latérale de la bûche si le joueur est sur une bûche
         int positionX = currentLog != null ? Mathf.RoundToInt(currentLog.position.x) : lateralPosition;
 
-        // Vérifie si le joueur est en dehors des limites
         if (positionX < -5 || positionX > 5)
         {
-            // Le personnage est mort
             animations.SetTrigger("Ecraser");
             vivant = false;
         }
@@ -301,4 +304,9 @@ public class PlayerMovement : MonoBehaviour
         get { return vivant; }
     }
 
+    // Ajout de la méthode GetForwardDistance
+    public int GetForwardDistance()
+    {
+        return forwardDistance;
+    }
 }
