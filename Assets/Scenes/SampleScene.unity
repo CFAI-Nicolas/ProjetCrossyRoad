@@ -335,7 +335,7 @@ MonoBehaviour:
   - {fileID: 8444768022287406592, guid: 3e7ae8e69cec937409c7a56d22704f79, type: 3}
   GrillesDevantJoueur: 15
   coinPrefab: {fileID: 6342946615235701980, guid: 0c8addf52b08d61419434b4e5d8addb7, type: 3}
-  coinSpawnProbability: 0.3
+  coinSpawnProbability: 0.05
 --- !u!4 &150626254
 Transform:
   m_ObjectHideFlags: 0

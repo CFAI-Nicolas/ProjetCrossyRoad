@@ -11,7 +11,7 @@ public class Monde : MonoBehaviour
 
     // mes ajouts pour les pièces
     public GameObject coinPrefab;
-    public float coinSpawnProbability = 0.3f;
+    public float coinSpawnProbability = 0.05f;
 
     private void Start()
     {
