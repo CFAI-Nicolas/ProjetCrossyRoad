@@ -116,12 +116,20 @@ public class PlayerMovement : MonoBehaviour
         if (log != null)
         {
             currentLog = log.transform;
+            // Centrer le joueur sur la bûche
+            Vector3 logCenter = new Vector3(currentLog.position.x, transform.position.y, currentLog.position.z);
+            transform.position = logCenter;
             transform.SetParent(currentLog);
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
+        if (!vivant)
+        {
+            return;
+        }
+
         if (other.CompareTag("buche"))
         {
             MoveUpOnLog(other.gameObject);
@@ -144,6 +152,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Noyer()
     {
+        if (!vivant)
+        {
+            return;
+        }
+
         if (currentLog == null)
         {
             RaycastHit hit;
@@ -163,6 +176,11 @@ public class PlayerMovement : MonoBehaviour
 
     void CheckBoundsAndKill()
     {
+        if (!vivant)
+        {
+            return;
+        }
+
         int positionX = currentLog != null ? Mathf.RoundToInt(currentLog.position.x) : lateralPosition;
 
         if (positionX < -5 || positionX > 5)
