@@ -14,7 +14,7 @@ public class ChangeSceneOnClick : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             // Charge la scène spécifiée
-            SceneManager.LoadScene(Demo1);
+            SceneManager.LoadScene("Menu");
         }
     }
 }

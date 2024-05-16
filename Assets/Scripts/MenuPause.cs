@@ -44,7 +44,7 @@ public class MenuPause : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Demo1"); // vérifier le nom avec Paul
+        SceneManager.LoadScene("Menu"); // vérifier le nom avec Paul
     }
 
     public void QuitGame()

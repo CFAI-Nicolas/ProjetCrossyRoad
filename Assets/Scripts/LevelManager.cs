@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -141,3 +141,4 @@ public class LevelManager : MonoBehaviour
         moveRight = right;
     }
 }
+*/

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,7 +27,11 @@ public class PlayerMovement : MonoBehaviour
         speed = 300;
         InvokeRepeating("Noyer", 1, 0.5f);
     }
-
+    public KeyCode moveForwardKey = KeyCode.W;
+    public KeyCode moveBackwardKey = KeyCode.S;
+    public KeyCode moveRightKey = KeyCode.D;
+    public KeyCode moveLeftKey = KeyCode.A;
+    private KeyCode newKey;
     void Update()
     {
         UpdatePosition();
@@ -38,28 +43,68 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(moveForwardKey))
         {
             MoveForward();
         }
 
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(moveBackwardKey))
         {
             MoveBackward();
         }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(moveRightKey))
         {
             MoveLateral(1);
         }
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(moveLeftKey))
         {
             MoveLateral(-1);
         }
     }
 
-    void UpdatePosition()
+    public void ChangeKey(string key)
+    {
+        StartCoroutine(WaitForKey(key));
+    }
+
+    IEnumerator WaitForKey(string key)
+    {
+        while (!Input.anyKeyDown)
+        {
+            yield return null;
+        }
+
+        foreach (KeyCode kcode in Enum.GetValues(typeof(KeyCode)))
+        {
+            if (Input.GetKeyDown(kcode))
+            {
+                newKey = kcode; // set new keycode
+                break;
+            }
+        }
+
+        switch (key)
+        {
+            case "forward":
+                moveForwardKey = newKey; // assign new keycode to forward movement
+                break;
+            case "backward":
+                moveBackwardKey = newKey; // assign new keycode to backward movement
+                break;
+            case "right":
+                moveRightKey = newKey; // assign new keycode to right movement
+                break;
+            case "left":
+                moveLeftKey = newKey; // assign new keycode to left movement
+                break;
+        }
+    }
+
+    // Ajoutez ici vos méthodes MoveForward, MoveBackward, etc.
+
+void UpdatePosition()
     {
         if (!vivant)
         {
@@ -147,9 +192,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
-
-
 
     private bool IsMovingWithLog()
     {
@@ -275,9 +317,6 @@ public class PlayerMovement : MonoBehaviour
                 animations.SetTrigger("Noyer");
                 // Définit vivant sur false pour indiquer que le joueur est noyé
                 vivant = false;
-                // Jouer le son "deadwater"
-                AudioSource audioSource = GetComponent<AudioSource>();
-                audioSource.PlayOneShot(deadwater);
             }
         }
     }

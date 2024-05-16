@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\Mouvement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Mouvement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\MenuPause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MenuPause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIElement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIElement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\GameOverMenuController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\GameOverMenuController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\ChangeSceneOnClick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ChangeSceneOnClick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +54,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "MenuPause.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\MenuPause.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuPause.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\MenuPause.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuPause.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAC4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T13:44:58.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ChangeSceneOnClick.cs",
               "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\ChangeSceneOnClick.cs",
               "RelativeDocumentMoniker": "Assets\\ChangeSceneOnClick.cs",
               "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\ChangeSceneOnClick.cs",
               "RelativeToolTip": "Assets\\ChangeSceneOnClick.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T07:57:34.504Z",
+              "WhenOpened": "2024-05-16T11:21:20.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameOverMenuController.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\GameOverMenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverMenuController.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\GameOverMenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameOverMenuController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T11:14:51.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIMenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
+              "RelativeToolTip": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:21:30.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ThemedUIElement.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIElement.cs",
+              "RelativeDocumentMoniker": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIElement.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIElement.cs",
+              "RelativeToolTip": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIElement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:57:34.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThemedUIData.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIData.cs",
+              "RelativeDocumentMoniker": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIData.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIData.cs",
+              "RelativeToolTip": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\ThemeEditor\\ThemedUIData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T08:00:40.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EventSystem.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:40:57.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UISettingsManager.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
+              "RelativeToolTip": "Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T13:07:16.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mouvement.cs",
+              "DocumentMoniker": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\Mouvement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mouvement.cs",
+              "ToolTip": "C:\\Users\\sango\\OneDrive\\Documents\\GitHub\\ProjetCrossyRoad\\Assets\\Scripts\\Mouvement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mouvement.cs",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAAAAUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:15:14.815Z",
               "EditorCaption": ""
             }
           ]

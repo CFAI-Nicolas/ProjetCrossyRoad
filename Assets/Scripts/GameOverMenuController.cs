@@ -1,3 +1,4 @@
+#pragma warning disable 0414
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -47,7 +48,7 @@ public class GameOverMenuController : MonoBehaviour
     {
         audioSource.Stop();
         // SceneManager.LoadScene("MainMenu"); // à activer après le merge avec la branche de Paul
-        SceneManager.LoadScene("Demo1"); // Utilisation correcte du nom de la scène
+        SceneManager.LoadScene("Menu"); // Utilisation correcte du nom de la scène
     }
 
     public void QuitGame()
