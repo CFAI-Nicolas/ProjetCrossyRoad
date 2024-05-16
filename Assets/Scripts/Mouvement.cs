@@ -233,6 +233,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("buche"))

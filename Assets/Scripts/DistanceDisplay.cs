@@ -6,14 +6,13 @@ using TMPro;
 
 public class DistanceDisplay : MonoBehaviour
 {
-    public PlayerMovement playerMovement;
-    public TextMeshProUGUI distanceText;
+    public TextMeshProUGUI scoreText; 
 
     void Update()
     {
-        if (playerMovement != null && distanceText != null)
+        if (scoreText != null)
         {
-            distanceText.text = "Distance parcourue : " + playerMovement.GetForwardDistance().ToString();
+            scoreText.text = "Score : " + ScoreManager.Instance.GetCurrentScore().ToString();
         }
     }
 }

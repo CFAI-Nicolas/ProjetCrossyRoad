@@ -333,7 +333,7 @@ MonoBehaviour:
   - {fileID: 1694357736347602823, guid: 70b1f8a3b7afc06438f7fe11df9322b1, type: 3}
   GrillesDevantJoueur: 15
   coinPrefab: {fileID: 6342946615235701980, guid: 0c8addf52b08d61419434b4e5d8addb7, type: 3}
-  coinSpawnProbability: 0.2
+  coinSpawnProbability: 0.9
 --- !u!4 &150626254
 Transform:
   m_ObjectHideFlags: 0
@@ -1487,8 +1487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662cbba71e75d9e44a1e7bf2fb3dcec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 466577074}
-  distanceText: {fileID: 1059602007}
+  scoreText: {fileID: 0}
 --- !u!114 &1059602007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1509,7 +1508,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Distance parcourue
+  m_text: 'Score :'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
