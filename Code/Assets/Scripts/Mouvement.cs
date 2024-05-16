@@ -105,7 +105,6 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit logHit;
         if (Physics.Raycast(transform.position, Vector3.down, out logHit, 1f, CoucheEau))
         {
-            if (logHit.collider.CompareTag("buche"))
             {
                 Debug.Log("Touche buche");
 
