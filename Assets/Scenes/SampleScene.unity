@@ -510,6 +510,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   currentLog: {fileID: 0}
+  moveForwardKey: 119
+  moveBackwardKey: 115
+  moveRightKey: 100
+  moveLeftKey: 97
   deadwater: {fileID: 0}
 --- !u!4 &466577075
 Transform:
@@ -643,6 +647,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1021066698826407846, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
+      propertyPath: m_IgnoreReversedGraphics
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1073753247529810506, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -667,9 +675,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1418948677426467608, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1510143919681476628, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549180849908011362, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1739068352010002463, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
       propertyPath: m_text
@@ -767,7 +783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4649160448173793098, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4649160448173793098, guid: f0520cb6e9ed2114d93d3beb9211fa0c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode

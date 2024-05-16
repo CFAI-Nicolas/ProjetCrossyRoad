@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -6,7 +6,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class LevelManager : MonoBehaviour
 {
-    public Transform mainMenu, optionMenu, characterMenu, rankingMenu;
+    public Transform mainMenu, optionMenu, characterMenu, touchesMenu;
     public Transform viewMenu, musicMenu;
     public Transform musicOn, musicOff;
     public InputField userInputField;
@@ -69,17 +69,18 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void rankMenu(bool clicked)
+    public void TouchesMenu(bool clicked)
     {
         if (clicked == true)
-        {
-            rankingMenu.gameObject.SetActive(clicked);
-            optionMenu.gameObject.SetActive(false);
+        {           
+            optionMenu.gameObject.SetActive(clicked);
+            touchesMenu.gameObject.SetActive(false);
         }
         else
         {
-            rankingMenu.gameObject.SetActive(clicked);
-            optionMenu.gameObject.SetActive(true);
+            optionMenu.gameObject.SetActive(clicked);
+            touchesMenu.gameObject.SetActive(true);
+            
         }
     }
 
@@ -141,4 +142,3 @@ public class LevelManager : MonoBehaviour
         moveRight = right;
     }
 }
-*/
