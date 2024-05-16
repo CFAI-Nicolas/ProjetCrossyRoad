@@ -8,6 +8,11 @@ public class Monde : MonoBehaviour
     public GameObject[] grille; // Assurez-vous que ce tableau est bien rempli dans l'éditeur Unity
     public GameObject[] Spawngrille;
     public int GrillesDevantJoueur;
+
+    // mes ajouts pour les pièces
+    public GameObject coinPrefab;
+    public float coinSpawnProbability = 0.3f;
+
     private void Start()
     {
         CreateSpawnLine();
@@ -37,6 +42,30 @@ public class Monde : MonoBehaviour
         GameObject toInstantiate = grille[Random.Range(0, grille.Length)];
         Vector3 position = new Vector3(0, 0, forwardDistance); // Utilise forwardDistance pour la position en Z
         Instantiate(toInstantiate, position, Quaternion.identity);
+
+        GenerateCoins(position);
+
         forwardDistance++;
+    }
+
+    private void GenerateCoins(Vector3 gridPosition)
+    {
+        // Définit des placements possibles (on a mis 5 arbitrairement)
+        Vector3[] coinPositions = new Vector3[]
+        {
+            new Vector3(-2, 0, gridPosition.z),
+            new Vector3(-1, 0, gridPosition.z),
+            new Vector3(0, 0, gridPosition.z),
+            new Vector3(1, 0, gridPosition.z),
+            new Vector3(2, 0, gridPosition.z)
+        };
+
+        foreach (Vector3 coinPosition in coinPositions)
+        {
+            if (Random.value < coinSpawnProbability)
+            {
+                Instantiate(coinPrefab, coinPosition, Quaternion.identity);
+            }
+        }
     }
 }
