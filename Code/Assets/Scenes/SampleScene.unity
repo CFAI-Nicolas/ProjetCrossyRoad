@@ -165,10 +165,10 @@ MonoBehaviour:
   - {fileID: 7474214790327812889, guid: cd7d96d899163884ab81f9e3151cc16b, type: 3}
   - {fileID: 7474214790327812889, guid: fa25eeab68b98eb428377db1960bd2cc, type: 3}
   - {fileID: 1694357736347602823, guid: 72e0297c189002344b6943907a55b60d, type: 3}
-  - {fileID: 1694357736347602823, guid: 5ac4a682b73163e43893d7dda3e651f2, type: 3}
-  - {fileID: 1694357736347602823, guid: 2f32998a8aa34b14598edd584e3bac12, type: 3}
-  - {fileID: 1694357736347602823, guid: 5bcc14520cd7ec04faa650e868300b95, type: 3}
-  - {fileID: 1694357736347602823, guid: cbe8ef7d70b818d4381ba5e7e961fc84, type: 3}
+  - {fileID: 1694357736347602823, guid: 72e0297c189002344b6943907a55b60d, type: 3}
+  - {fileID: 1694357736347602823, guid: 89c62e3e35810b940a180e7e126b6817, type: 3}
+  - {fileID: 1694357736347602823, guid: 72e0297c189002344b6943907a55b60d, type: 3}
+  - {fileID: 1694357736347602823, guid: 89c62e3e35810b940a180e7e126b6817, type: 3}
   - {fileID: 1694357736347602823, guid: 70b1f8a3b7afc06438f7fe11df9322b1, type: 3}
   - {fileID: 1694357736347602823, guid: 7529d655fcc46ca4e94371aa4e4170eb, type: 3}
   - {fileID: 1694357736347602823, guid: 0572afdf4380dd8429ff4b58e9775bb1, type: 3}
@@ -611,7 +611,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
+  near clip plane: -50
   far clip plane: 1000
   field of view: 60
   orthographic: 1
