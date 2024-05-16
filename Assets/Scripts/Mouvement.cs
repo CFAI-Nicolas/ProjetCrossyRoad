@@ -1,4 +1,3 @@
-// Mouvement.cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -95,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(1f / speed);
         }
     }
-    /*
+
     public void MoveForward()
     {
         Graphique.eulerAngles = new Vector3(0, 0, 0);
@@ -104,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         forwardDistance++;
-        ScoreManager.Instance.IncrementScore(); // Incrémente le score
+        ScoreManager.Instance.IncrementScore(1); // Incrémente le score de 1 point
 
         if (forwardDistance > maxForwardDistance)
         {
@@ -124,45 +123,6 @@ public class PlayerMovement : MonoBehaviour
 
         StartCoroutine(ChangePosition());
     }
-    */
-    public void MoveForward()
-    {
-        Graphique.eulerAngles = new Vector3(0, 0, 0);
-
-        if (RegardAvant())
-        {
-            Debug.Log("Obstacle détecté, mouvement interrompu.");
-            return;
-        }
-
-        forwardDistance++;
-        ScoreManager.Instance.IncrementScore(); 
-        Debug.Log("Score incrémenté : " + ScoreManager.Instance.GetCurrentScore());
-
-        if (forwardDistance > maxForwardDistance)
-        {
-            maxForwardDistance = forwardDistance;
-            monde.CreateGrille();
-        }
-
-        // Vérifier s'il y a une buche dans la case actuelle
-        RaycastHit logHit;
-        if (Physics.Raycast(transform.position, Vector3.down, out logHit, 1f, CoucheEau))
-        {
-            if (logHit.collider.CompareTag("buche"))
-            {
-                Debug.Log("Touche buche");
-
-                MoveUpOnLog(logHit.collider.gameObject);
-                return;
-            }
-        }
-
-        Debug.Log("Déplacement normal.");
-        StartCoroutine(ChangePosition());
-    }
-
-
 
     public void MoveUpOnLog(GameObject log)
     {
@@ -253,7 +213,25 @@ public class PlayerMovement : MonoBehaviour
             animations.SetTrigger("Ecraser");
             vivant = false;
         }
+        else if (other.CompareTag("piece"))
+        {
+            Debug.Log("Contact avec une pièce!");
+
+            // Essayez de trouver le script Coin dans l'objet de collision ou dans ses parents
+            Coin coin = other.GetComponent<Coin>() ?? other.GetComponentInParent<Coin>();
+            if (coin != null)
+            {
+                Debug.Log("Pièce collectée! Valeur: " + coin.points);
+                Destroy(coin.gameObject); // Détruisez l'objet qui a le script Coin
+            }
+            else
+            {
+                Debug.LogError("Le script Coin n'a pas été trouvé sur l'objet de collision.");
+            }
+        }
     }
+
+
 
     void OnTriggerExit(Collider other)
     {
@@ -304,9 +282,8 @@ public class PlayerMovement : MonoBehaviour
         get { return vivant; }
     }
 
-    // Ajout de la méthode GetForwardDistance
     public int GetForwardDistance()
     {
-        return forwardDistance;
+        return maxForwardDistance;
     }
 }

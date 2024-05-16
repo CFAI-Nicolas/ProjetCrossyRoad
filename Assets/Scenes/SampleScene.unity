@@ -331,11 +331,9 @@ MonoBehaviour:
   - {fileID: 1694357736347602823, guid: 72e0297c189002344b6943907a55b60d, type: 3}
   - {fileID: 7474214790327812889, guid: 79c7bd9fe016f844f80b4c1a8db504c7, type: 3}
   - {fileID: 1694357736347602823, guid: 70b1f8a3b7afc06438f7fe11df9322b1, type: 3}
-  Spawngrille:
-  - {fileID: 8444768022287406592, guid: 3e7ae8e69cec937409c7a56d22704f79, type: 3}
   GrillesDevantJoueur: 15
   coinPrefab: {fileID: 6342946615235701980, guid: 0c8addf52b08d61419434b4e5d8addb7, type: 3}
-  coinSpawnProbability: 0.05
+  coinSpawnProbability: 0.2
 --- !u!4 &150626254
 Transform:
   m_ObjectHideFlags: 0
@@ -664,7 +662,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0

@@ -10,6 +10,24 @@ public class ScoreManager : MonoBehaviour
 
     private static ScoreManager instance;
 
+    public static ScoreManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<ScoreManager>();
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject("ScoreManager");
+                    instance = obj.AddComponent<ScoreManager>();
+                    DontDestroyOnLoad(obj);
+                }
+            }
+            return instance;
+        }
+    }
+
     void Awake()
     {
         if (instance == null)
@@ -23,31 +41,27 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    public static ScoreManager Instance
-    {
-        get { return instance; }
-    }
-
     public void ResetCurrentScore()
     {
         currentScore = 0;
     }
 
-    public void IncrementScore()
+    public void IncrementScore(int points)
     {
-        currentScore++;
+        Debug.Log("Appel à IncrementScore avec : " + points); // Nouveau log
+        Debug.Log("Ajout de points : " + points);
+        currentScore += points;
+        Debug.Log("Score actuel : " + currentScore);
     }
 
     public void SaveCurrentScore()
     {
-        // à améliorer si possible pour que le bestScore se mette à jour mieux
-        //lastScore = currentScore; 
+        lastScore = currentScore;
         if (currentScore > bestScore)
         {
-            bestScore = currentScore; 
+            bestScore = currentScore;
         }
-        lastScore = currentScore;
-        currentScore = 0; 
+        currentScore = 0;
     }
 
     public int GetCurrentScore()
