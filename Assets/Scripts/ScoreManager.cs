@@ -6,7 +6,6 @@ public class ScoreManager : MonoBehaviour
 {
     private int currentScore = 0;
     private int bestScore = 0;
-    private int lastScore = 0;
 
     private static ScoreManager instance;
 
@@ -56,7 +55,6 @@ public class ScoreManager : MonoBehaviour
 
     public void SaveCurrentScore()
     {
-        lastScore = currentScore;
         if (currentScore > bestScore)
         {
             bestScore = currentScore;
@@ -67,11 +65,6 @@ public class ScoreManager : MonoBehaviour
     public int GetCurrentScore()
     {
         return currentScore;
-    }
-
-    public int GetLastScore()
-    {
-        return lastScore;
     }
 
     public int GetBestScore()

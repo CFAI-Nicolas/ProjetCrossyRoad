@@ -9,7 +9,6 @@ public class GameOverMenuController : MonoBehaviour
     public PlayerMovement playerMovement;
     public GameObject gameOverMenu;
     public TextMeshProUGUI currentScoreText;
-    public TextMeshProUGUI lastScoreText;
     public TextMeshProUGUI bestScoreText;
     private AudioSource audioSource;
 
@@ -44,15 +43,12 @@ public class GameOverMenuController : MonoBehaviour
         if (ScoreManager.Instance != null)
         {
             int currentScore = ScoreManager.Instance.GetCurrentScore();
-            int lastScore = ScoreManager.Instance.GetLastScore();
             int bestScore = ScoreManager.Instance.GetBestScore();
 
             Debug.Log("Current Score: " + currentScore);
-            Debug.Log("Last Score: " + lastScore);
             Debug.Log("Best Score: " + bestScore);
 
             currentScoreText.text = "Score actuel : " + currentScore.ToString();
-            lastScoreText.text = "Dernier score : " + lastScore.ToString();
             bestScoreText.text = "Record : " + bestScore.ToString();
 
             // Sauvegarder le score actuel après l'affichage

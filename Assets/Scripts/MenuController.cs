@@ -21,17 +21,17 @@ public class MenuController : MonoBehaviour
     }
     public void OptionMenu()
     {
-        optionMenuActive = !optionMenuActive; // Inverser l'état du menu des options
+        optionMenuActive = !optionMenuActive; // Inverser l'ï¿½tat du menu des options
 
         if (optionMenuActive)
         {
-            optionText.text = "PlayerMenu\nMusicMenu\nRetour"; // Définir le texte des options
+            optionText.text = "PlayerMenu\nMusicMenu\nRetour"; // Dï¿½finir le texte des options
             optionMenu.SetActive(true); // Activer le menu des options
-            mainMenu.SetActive(false); // Désactiver le menu principal
+            mainMenu.SetActive(false); // Dï¿½sactiver le menu principal
         }
         else
         {
-            optionMenu.SetActive(false); // Désactiver le menu des options
+            optionMenu.SetActive(false); // Dï¿½sactiver le menu des options
             mainMenu.SetActive(true); // Activer le menu principal
         }
     }
