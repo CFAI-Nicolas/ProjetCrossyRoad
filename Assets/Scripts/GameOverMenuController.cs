@@ -49,7 +49,7 @@ public class GameOverMenuController : MonoBehaviour
             Debug.Log("Best Score: " + bestScore);
 
             currentScoreText.text = "Score actuel : " + currentScore.ToString();
-            bestScoreText.text = "Record : " + bestScore.ToString();
+            bestScoreText.text = "Ancien record : " + bestScore.ToString();
 
             // Sauvegarder le score actuel après l'affichage
             ScoreManager.Instance.SaveCurrentScore();
