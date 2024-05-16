@@ -143,11 +143,28 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("buche"))
+        if (other.CompareTag("buche") && !IsLandingOnObstacle())
         {
             transform.SetParent(null);
             currentLog = null;
+
+            // Vérifier si une autre bûche est directement en dessous
+            RaycastHit logHit;
+            if (Physics.Raycast(transform.position, Vector3.down, out logHit, 1f, CoucheEau))
+            {
+                if (logHit.collider.CompareTag("buche"))
+                {
+                    MoveUpOnLog(logHit.collider.gameObject);
+                }
+            }
         }
+    }
+
+    public bool IsLandingOnObstacle()
+    {
+        Vector3 positionBelow = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z);
+        Collider[] hitColliders = Physics.OverlapSphere(positionBelow, 0.1f, CoucheObstacles);
+        return hitColliders.Length > 0;
     }
 
     public void Noyer()
