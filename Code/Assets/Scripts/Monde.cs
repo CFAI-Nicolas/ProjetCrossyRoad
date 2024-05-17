@@ -9,6 +9,12 @@ public class Monde : MonoBehaviour
     public GameObject[] Spawngrille;
     public int GrillesDevantJoueur;
 
+
+    [Header("Coin Settings")]
+    public GameObject coinPrefab;
+    [Range(0f, 1f)]
+    public float coinSpawnProbability = 0.5f;
+
     private void Start()
     {
         CreateSpawnLine();
@@ -45,6 +51,21 @@ public class Monde : MonoBehaviour
 
         // Instancie l'objet avec la position et la rotation calculées
         Instantiate(toInstantiate, position, rotation);
+        GenerateCoins(position);
+
+
         forwardDistance++;
     }
+
+    void GenerateCoins(Vector3 grillePosition)
+    {
+        // Détermine si une pièce doit être générée en fonction de la probabilité définie
+        if (Random.value < coinSpawnProbability)
+        {
+            // Détermine une position aléatoire sur la grille pour la pièce
+            Vector3 coinPosition = grillePosition + new Vector3(Random.Range(-5, 6), 0.5f, Random.Range(0, 1));
+            Instantiate(coinPrefab, coinPosition, Quaternion.identity);
+        }
+    }
+
 }

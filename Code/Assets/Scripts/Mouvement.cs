@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animations;
     public AnimationCurve courbe;
     public Transform currentLog; // Champ de classe pour stocker la référence à la buche actuelle
+    public AudioClip deadwater;
 
     void Start()
     {
@@ -36,23 +37,24 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
+        KeyBindingManager keyBindingManager = KeyBindingManager.Instance;
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(keyBindingManager.keyBindings["Forward"]) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             MoveForward();
         }
 
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(keyBindingManager.keyBindings["Backward"]) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             MoveBackward();
         }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(keyBindingManager.keyBindings["Right"]) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             MoveLateral(1);
         }
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(keyBindingManager.keyBindings["Left"]) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             MoveLateral(-1);
         }
@@ -91,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         forwardDistance++;
+        ScoreManager.Instance.IncrementScore(1); // Incrémente le score de 1 point
 
         if (forwardDistance > maxForwardDistance)
         {
@@ -139,6 +142,22 @@ public class PlayerMovement : MonoBehaviour
             animations.SetTrigger("Ecraser");
             vivant = false;
         }
+        else if (other.CompareTag("piece"))
+        {
+            Debug.Log("Contact avec une pièce!");
+
+            // Essayez de trouver le script Coin dans l'objet de collision ou dans ses parents
+            Coin coin = other.GetComponent<Coin>() ?? other.GetComponentInParent<Coin>();
+            if (coin != null)
+            {
+                Debug.Log("Pièce collectée! Valeur: " + coin.points);
+                Destroy(coin.gameObject); // Détruisez l'objet qui a le script Coin
+            }
+            else
+            {
+                Debug.LogError("Le script Coin n'a pas été trouvé sur l'objet de collision.");
+            }
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -186,6 +205,8 @@ public class PlayerMovement : MonoBehaviour
                 {
                     animations.SetTrigger("Noyer");
                     vivant = false;
+                    AudioSource audioSource = GetComponent<AudioSource>();
+                    audioSource.PlayOneShot(deadwater);
                 }
             }
         }
@@ -247,7 +268,12 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
 
-    public int GetMaxForwardDistance()
+    public bool IsAlive
+    {
+        get { return vivant; }
+    }
+
+    public int GetForwardDistance()
     {
         return maxForwardDistance;
     }
