@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\Monde.cs" />
     <Compile Include="Assets\Scripts\Destructeur.cs" />
+    <Compile Include="Assets\SimpleCollectiblesPack\SimpleCollectibleScript.cs" />
     <Compile Include="Assets\Scripts\GameOverMenuController.cs" />
     <Compile Include="Assets\Scripts\sonsvoitures.cs" />
     <Compile Include="Assets\Scripts\Buche.cs" />

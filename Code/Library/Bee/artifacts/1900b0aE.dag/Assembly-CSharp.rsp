@@ -370,6 +370,7 @@
 "Assets/Scripts/ScoreManager.cs"
 "Assets/Scripts/sonsvoitures.cs"
 "Assets/Scripts/Voiture.cs"
+"Assets/SimpleCollectiblesPack/SimpleCollectibleScript.cs"
 -langversion:9.0
 
 /deterministic
