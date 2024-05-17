@@ -1,38 +1,128 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
-    public GameObject optionMenu;
     public GameObject mainMenu;
-    public Text optionText; // Le texte pour afficher les options
+    public GameObject optionMenu;
+    public GameObject playerMenu;
+    public GameObject musicMenu;
+    public GameObject touchesMenu;
+    public GameObject quitMenu; // test
 
-    private bool optionMenuActive = false;
-    public void ChangeScene(string SampleScene)
+    public Button forwardButton;
+    public Button backwardButton;
+    public Button leftButton;
+    public Button rightButton;
+    public Button returnButton;
+    public Button jouerButton;
+    public Button quitButton;
+
+    private AudioSource audioSource;
+
+    void Start()
     {
-        SceneManager.LoadScene(SampleScene);
+        audioSource = GetComponent<AudioSource>();
+        forwardButton.onClick.AddListener(() => StartRebind("Forward"));
+        backwardButton.onClick.AddListener(() => StartRebind("Backward"));
+        leftButton.onClick.AddListener(() => StartRebind("Left"));
+        rightButton.onClick.AddListener(() => StartRebind("Right"));
+        returnButton.onClick.AddListener(ReturnToOptions);
+
+        PlayMusic();
     }
-    public void OnApplicationQuit()
+
+    void StartRebind(string keyName)
+    {
+        KeyBindingManager.Instance.StartRebind(keyName);
+    }
+
+    public void ShowMainMenu()
+    {
+        mainMenu.SetActive(true);
+        optionMenu.SetActive(false);
+        playerMenu.SetActive(false);
+        musicMenu.SetActive(false);
+        touchesMenu.SetActive(false);
+    }
+
+    public void ShowOptionMenu()
+    {
+        mainMenu.SetActive(false);
+        optionMenu.SetActive(true);
+        playerMenu.SetActive(false);
+        musicMenu.SetActive(false);
+        touchesMenu.SetActive(false);
+    }
+
+    public void ShowPlayerMenu()
+    {
+        mainMenu.SetActive(false);
+        optionMenu.SetActive(false);
+        playerMenu.SetActive(true);
+        musicMenu.SetActive(false);
+        touchesMenu.SetActive(false);
+    }
+
+    public void ShowMusicMenu()
+    {
+        mainMenu.SetActive(false);
+        optionMenu.SetActive(false);
+        playerMenu.SetActive(false);
+        musicMenu.SetActive(true);
+        touchesMenu.SetActive(false);
+    }
+
+    public void ShowTouchesMenu()
+    {
+        mainMenu.SetActive(false);
+        optionMenu.SetActive(false);
+        playerMenu.SetActive(false);
+        musicMenu.SetActive(false);
+        touchesMenu.SetActive(true);
+    }
+
+    public void ReturnToOptions()
+    {
+        mainMenu.SetActive(false);
+        optionMenu.SetActive(true);
+        playerMenu.SetActive(false);
+        musicMenu.SetActive(false);
+        touchesMenu.SetActive(false);
+    }
+
+    public void PlayMusic()
+    {
+        if (audioSource != null && !audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
+
+    public void StopMusic()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
+
+    public void SetVolume(float volume)
+    {
+        if (audioSource != null)
+        {
+            audioSource.volume = volume;
+        }
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void QuitGame()
     {
         Application.Quit();
-    }
-    public void OptionMenu()
-    {
-        optionMenuActive = !optionMenuActive; // Inverser l'�tat du menu des options
-
-        if (optionMenuActive)
-        {
-            optionText.text = "PlayerMenu\nMusicMenu\nRetour"; // D�finir le texte des options
-            optionMenu.SetActive(true); // Activer le menu des options
-            mainMenu.SetActive(false); // D�sactiver le menu principal
-        }
-        else
-        {
-            optionMenu.SetActive(false); // D�sactiver le menu des options
-            mainMenu.SetActive(true); // Activer le menu principal
-        }
     }
 }

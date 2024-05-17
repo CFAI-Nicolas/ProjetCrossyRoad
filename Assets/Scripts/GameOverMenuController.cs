@@ -85,7 +85,7 @@ public class GameOverMenuController : MonoBehaviour
         {
             audioSource.Stop();
         }
-        // SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
