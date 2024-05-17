@@ -16,7 +16,7 @@ public class KeyBindingManager : MonoBehaviour
     public TextMeshProUGUI leftText;
     public TextMeshProUGUI rightText;
 
-    public GameObject rebindPanel; // Panneau qui apparaît pendant la réassignation
+    //public GameObject rebindPanel; // Panneau qui apparaît pendant la réassignation
 
     private string keyToRebind;
 
@@ -53,7 +53,7 @@ public class KeyBindingManager : MonoBehaviour
                     keyToRebind = null;
                     SaveBindings();
                     UpdateUI();
-                    rebindPanel.SetActive(false); // Masquer le panneau de réassignation
+                    //rebindPanel.SetActive(false); // Masquer le panneau de réassignation
                     EnableUI(true); // Réactiver les éléments UI interactifs
                     break;
                 }
@@ -64,7 +64,7 @@ public class KeyBindingManager : MonoBehaviour
     public void StartRebind(string keyName)
     {
         keyToRebind = keyName;
-        rebindPanel.SetActive(true); // Afficher le panneau de réassignation
+        //rebindPanel.SetActive(true); // Afficher le panneau de réassignation
         EnableUI(false); // Désactiver les éléments UI interactifs
     }
 
@@ -138,10 +138,10 @@ public class KeyBindingManager : MonoBehaviour
         Button[] buttons = FindObjectsOfType<Button>();
         foreach (var button in buttons)
         {
-            if (button.gameObject != rebindPanel)
-            {
+           // if (button.gameObject != rebindPanel)
+            //{
                 button.interactable = enable;
-            }
+            //}
         }
 
         TMP_InputField[] inputFields = FindObjectsOfType<TMP_InputField>();

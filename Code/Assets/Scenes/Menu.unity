@@ -2603,7 +2603,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5963248487d68e9499135cdb2b5ecbe1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ce0c88599cf1c404e91f911adda26022, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3371,7 +3371,6 @@ MonoBehaviour:
   backwardText: {fileID: 1030667632}
   leftText: {fileID: 1720324145}
   rightText: {fileID: 2088931060}
-  rebindPanel: {fileID: 0}
 --- !u!1 &1445873627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,7 +4256,6 @@ GameObject:
   - component: {fileID: 1743565155}
   - component: {fileID: 1743565154}
   - component: {fileID: 1743565153}
-  - component: {fileID: 1743565156}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4315,18 +4313,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1743565156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743565152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea6d802aacf3d346b83e058c3ab6fd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1751432891
 GameObject:
   m_ObjectHideFlags: 0
