@@ -205,8 +205,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     animations.SetTrigger("Noyer");
                     vivant = false;
-                    AudioSource audioSource = GetComponent<AudioSource>();
-                    audioSource.PlayOneShot(deadwater);
+
                 }
             }
         }
